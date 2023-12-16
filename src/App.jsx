@@ -1,5 +1,5 @@
 import './App.css'
-// import { Header } from './common/Header/Header'
+import { Header } from './common/Header/Header'
 import { Router } from './pages/Routes/Router';
 import smoothscroll from 'smoothscroll-polyfill';
  
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      {/* <Header/> */}
+      <Header/>
       <Router/>
     </>
   )

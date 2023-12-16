@@ -1,0 +1,38 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header.scrolled {
+    background-color: black; /* Color de fondo cuando se hace scroll */
+  }
+  
+  .menuIcon {
+    cursor: pointer;
+    padding: 4.5em;
+    color: white;
+  }
+  
+  .menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30em;
+    background-color: rgba(0, 0, 0, 0.485);
+
+  }
+  
+   .centeredImage{
+    width: 28em;
+    height: 18em;
+    margin-right: 50.5em;
+} 
