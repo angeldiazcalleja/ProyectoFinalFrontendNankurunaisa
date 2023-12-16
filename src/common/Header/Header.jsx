@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
-import Logo from "../../assets/LogoHomeEdit.png";
+import Logo from "../../assets/LogoHomeFinal.png";
 import "./Header.css";
 
 export const Header = () => {
@@ -46,10 +46,15 @@ export const Header = () => {
       </div>
       {isMenuOpen && (
         <div className="menu-sidebar">
-        
           <div className="closeIcon" onClick={closeMenu}>
             <FaTimes style={{ color: "#fafafa", width: "2em", height: "2em" }} />
           </div>
+          <img
+          src={Logo}
+          alt="Logo"
+          className="sidebarImage"
+        />
+
         </div>
       )}
     </header>
