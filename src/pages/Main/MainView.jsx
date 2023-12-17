@@ -1,5 +1,7 @@
 // import { Header } from "../../common/Header/Header";
+import { About } from "../About/About";
 import { Home } from "../Home/Home";
+import Nankurunaisa from "../Nankurunaisa/Nankurunaisa";
 import "./MainView.css";
 
 export const MainView = () => {
@@ -7,9 +9,10 @@ export const MainView = () => {
     <div className="principalView">
       {/* <Header showHeader={true} /> */}
 
-      <div id="home">
         <Home />
-      </div>
+        <Nankurunaisa/>
+        <About/>
+    
     </div>
   );
 };

@@ -1,0 +1,131 @@
+.nankurunaisaContainer {
+  position: relative;
+  width: 100vw;
+  height: 52.5em;
+  overflow: hidden;
+  margin-left: -0.5em;
+  margin-top: -0.5em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+}
+  
+  .textContainer {
+    flex: 1;
+    margin-right: 20px; 
+  }
+  
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .nankurunaisaImage{
+    width: 65em;
+    height: 40em;
+    margin-right: 6em;
+  }
+
+  .nankurunaisaTop{
+   margin-top: 2em;
+  }
+  
+   .nankurunaisaBottom{
+    margin-top: 5em;
+   }
+  .nankurunaisaText{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .nankurunaisaTitle{
+    font-size: 40px;
+    margin-left: 6.5em;
+    margin-top: -5em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .nankurunaisaTitle2{
+    font-size: 40px;
+    margin-left: 5em;
+    margin-top: -5em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .nankurunaisaContainerBotton {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    height: 45.5em;
+  }
+  
+
+  .imageContainerRight{
+    margin-left: 3em;
+  }
+
+  .wildLuxuryContainer {
+    text-align: center; /* Alinea el contenido al centro si es necesario */
+  }
+  
+  .wildLuxuryTitle,
+  .wildLuxurySubtitle,
+  .wildLuxuryTailored,
+  .wildLuxuryAdventurous {
+    display: block;
+  }
+  
+  .wildLuxuryTitle{
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: black;
+    margin-right: 2.5em;
+  }
+
+  .wildLuxurySubtitle{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-right: 6.9em;
+    margin-top: 1em;
+    color: black;
+  }
+
+  .wildLuxuryTailored{
+    font-size: 45px;
+    margin-left: 3.5em;
+    margin-top: 2em;
+    color: rgba(0, 0, 0, 0.733);
+  }
+
+  .wildLuxuryAdventurous{
+    font-size: 45px;
+    margin-left: 6em;
+    margin-top: 0.5em;
+    color: rgba(0, 0, 0, 0.733);
+  }
+
+  .exploreButton {
+    display: inline-block;
+    padding: 0.8em 3em;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid black; 
+    border-radius: 4px; 
+    text-align: center;
+    margin-left: 8em;
+    margin-top: 4em;
+  }
+  
+  .exploreButton:hover {
+    background-color: black;
+    color: white;
+  }
+  
