@@ -1,6 +1,6 @@
 import "./Nankurunaisa.css";
 import Img5 from "../../assets/img5.jpg";
-import Img8 from "../../assets/img8.avif";
+import Img9 from "../../assets/img9.jpeg";
 
 export const Nankurunaisa = () => {
   return (
@@ -36,7 +36,7 @@ export const Nankurunaisa = () => {
       </div>
       <div className="nankurunaisaContainerBotton">
         <div className="imageContainerRight">
-          <img src={Img8} alt="Logo" className="nankurunaisaImage" />
+          <img src={Img9} alt="Logo" className="nankurunaisaImage" />
         </div>
         <div className="textContainer">
           <div className="nankurunaisaTop">
