@@ -1,0 +1,63 @@
+.destinationsContainer {
+    text-align: center;
+    width: 100%;
+    height: 44em;
+  }
+  
+  .containerTitleDestinations{
+    margin-top: 3em;
+  }
+  .destinationsTitle {
+    font-size: 4em; 
+    margin-top: 15em;
+    font-variant: all-petite-caps;
+  }
+  
+  .destinationImages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.5em;
+  }
+  
+  .destinationImage {
+    width: 31.5%; 
+    height: 28em;
+    margin-right: 1em;
+  }
+  
+  .beachContainer {
+    position: relative;
+    width: 100vw;
+    height: 32em;
+    overflow: hidden;
+    background-size: cover;
+    margin-left: -0.6em;
+  }
+  
+  .contentOverlayDestinations {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  .aboutText1{
+    font-size: 3em;
+    margin-left: 1.5em;
+    font-variant: all-petite-caps;
+    margin-top: 2em;
+  }
+
+  .aboutText2{
+    font-size: 3em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    font-variant: all-petite-caps;
+  }
+ 
+  .AboutImageDestinations {
+    width: 100%; 
+    height: 32em;
+  }
+  
