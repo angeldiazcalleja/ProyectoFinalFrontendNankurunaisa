@@ -1,0 +1,35 @@
+.desertContainer{
+    width: 100%;
+    height: 72em;
+    background-color: rgba(250, 235, 215, 0.348);
+    margin-left: -0.3em;
+}
+
+img.desertImage{
+    width: 118em;
+    height: 58em;
+    margin-left: 4em;
+    margin-top: 3em;
+    margin-bottom: 1.2em;
+    
+}
+
+.desertTitle{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-left: 46.5em;
+    letter-spacing: 0.2em;
+}
+
+.desertSubtitle{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-left: 55.1em;
+    letter-spacing: 0.2em;
+    margin-top: 1em;
+}
+
+.activitiesText{
+    margin-left: 5em;
+    text-align: center;
+}

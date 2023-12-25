@@ -1,6 +1,7 @@
 // import { Header } from "../../common/Header/Header";
 import { About } from "../About/About";
 import Carousel from "../Carousel/Carousel";
+import { Desert } from "../Desert/Desert";
 
 import Destinations from "../Destinations/Destinations";
 import { Home } from "../Home/Home";
@@ -16,6 +17,7 @@ export const MainView = () => {
         <About/>
         <Destinations/>
         <Carousel/>
+        <Desert/>
        
     </div>
   );
