@@ -1,6 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { MainView } from "../Main/MainView";
-// import { Header } from "../../common/Header/Header";
+import { Palaos } from "../Palaos/Palaos";
+// import Header from "../../common/Header/Header";
+
 
 export const Router = () => {
   return (
@@ -24,7 +26,15 @@ export const Router = () => {
             </>
           }
         />
-        
+          <Route
+          path="/palaos"
+          element={
+            <>
+              <Palaos />
+            </>
+          }
+        />
+
       </Routes>
     </>
   );
