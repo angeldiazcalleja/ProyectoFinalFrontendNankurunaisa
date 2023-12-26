@@ -40,11 +40,10 @@ export const Carousel = () => {
     dots: false,
     infinite: true,
     speed: 750,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
-    variableWidth: true,
     beforeChange: (current, next) => {
       setSliderIndex(next);
     },

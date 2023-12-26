@@ -1,13 +1,41 @@
-.footerContainer{
-    width: 100%;
-    height: 80em;
-    background-color: black;
-   margin-left: -0.5em;
+.footerContainer {
+  width: 130em;
+  height: 85em;
+  background-color: black;
+  margin-left: -0.5em;
 }
 
-img.africanWomanFooter{
+img.africanWomanFooter {
   height: 32em;
   width: 127em;
   margin-top: 16em;
-  opacity: 0.5;
+  opacity: 0.4;
 }
+
+.footerBottomText {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 1.4em;
+  margin-left: 7em;
+}
+
+.lineContactBottom {
+  width: 90%;
+  height: 10px;
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  margin-top: 17em;
+  margin-left: 3em;
+}
+
+.lineContactBottom:before {
+  content: "";
+  width: 100%;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.381);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+

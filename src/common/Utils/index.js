@@ -20,7 +20,7 @@ import img17 from "../../assets/Carousel/Img17.jpg";
 export const carouselImages = [
   { src: img0, height: 500, marginTop: "0em" },
   { src: img1, height: 350, marginTop: "4.8em" },
-  { src: img2, height: 250, marginTop: "8.5em" },
+  { src: img2, height: 200, marginTop: "10em" },
   { src: img3, height: 350, marginTop: "4.8em" },
   { src: img4, height: 500, marginTop: "0em" },
   { src: img5, height: 500, marginTop: "0em" },
