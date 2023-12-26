@@ -1,8 +1,9 @@
 .footerContainer {
   width: 130em;
-  height: 85em;
+  height: 66em;
   background-color: black;
   margin-left: -0.5em;
+  position: relative;
 }
 
 img.africanWomanFooter {
@@ -16,9 +17,13 @@ img.africanWomanFooter {
   font-size: 15px;
   text-align: center;
   color: white;
-  margin-top: 1.4em;
-  margin-left: 7em;
+  margin-top: 2em;
+  margin-left: 0em;
 }
+
+.customSocial{
+    margin-left: 57em;
+  }
 
 .lineContactBottom {
   width: 90%;
@@ -26,8 +31,9 @@ img.africanWomanFooter {
   text-align: center;
   font-size: 28px;
   position: relative;
-  margin-top: 17em;
+  margin-top: 1.5em;
   margin-left: 3em;
+  margin-bottom: 1.5em;
 }
 
 .lineContactBottom:before {
@@ -39,3 +45,67 @@ img.africanWomanFooter {
   z-index: 1;
 }
 
+.footerInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.footerInformation span {
+  color: white;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-left: 6.2em;
+  margin-right: 6.5em;
+}
+
+.footerInformation span:hover {
+  color: rgba(255, 255, 255, 0.484);
+}
+
+.footerContainerImg {
+  position: relative;
+}
+
+.joinFamily {
+  position: absolute;
+  top: 10%;
+  left: 48.5%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-variant: all-petite-caps;
+  font-size: 5em;
+  margin-top: 3em;
+}
+
+.inputContainer {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  gap: 1em;
+  margin-top: 23.5em;
+}
+
+.joinUsButton {
+  display: inline-block;
+  padding: 0.8em 3em;
+  width: 15em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.442);
+  color: white;
+  text-align: center;
+  
+}
+
+.joinUsButton:hover {
+  background-color: black;
+  color: white;
+}
