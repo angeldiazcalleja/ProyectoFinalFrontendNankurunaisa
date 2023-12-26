@@ -17,19 +17,19 @@ img.desertImage{
 .desertTitle{
     font-size: 1.2em;
     text-transform: uppercase;
-    margin-left: 46.5em;
+    margin-left: 44em;
     letter-spacing: 0.2em;
 }
 
 .desertSubtitle{
     font-size: 1em;
     text-transform: uppercase;
-    margin-left: 55.1em;
+    margin-left: 52em;
     letter-spacing: 0.2em;
     margin-top: 1em;
 }
 
 .activitiesText{
-    margin-left: 5em;
+    margin-left: 1.5em;
     text-align: center;
 }

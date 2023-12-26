@@ -1,0 +1,119 @@
+/* .principalContainer {
+  height: 30em;
+}
+
+.containerTitleInstagram {
+  margin-top: 5em;
+}
+
+.instagramTitle {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-variant: all-petite-caps;
+  margin-left: 19.5em;
+}
+
+.photosContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.8em;
+  margin-right: 1.6em;
+}
+
+.instagramPhoto {
+  width: 14em;
+  height: 14em;
+  overflow: hidden;
+  margin-top: 3em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instagramButton {
+    display: inline-block;
+    padding: 0.8em 3em;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid black; 
+    border-radius: 4px; 
+    text-align: center;
+    font-variant: all-petite-caps;
+    margin-left: 35.50em;
+    margin-top: 4em;
+  }
+  
+  .instagramButton:hover {
+    background-color: black;
+    color: white;
+  }
+   */
+
+
+   /* Instagram.css */
+
+.principalContainer {
+    height: 30em;
+  }
+  
+  .containerTitleInstagram {
+    margin-top: 5em;
+  }
+  
+  .instagramTitle {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-variant: all-petite-caps;
+    margin-left: 18.9em;
+  }
+  
+  .photosContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.8em; /* Ajusta la distancia a la izquierda */
+    margin-right: 3.2em; /* Ajusta la distancia a la derecha */
+  }
+  
+  .instagramPhoto {
+    width: 14em;
+    height: 14em;
+    overflow: hidden;
+    margin-top: 3em;
+    margin-bottom: 1.5em; /* Ajusta la separación entre las fotos */
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .instagramButton {
+    display: inline-block;
+    padding: 0.8em 3em;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 4px;
+    text-align: center;
+    font-variant: all-petite-caps;
+    margin-left: 35.5em;
+    margin-top: 1.5em;
+  }
+  
+  .instagramButton:hover {
+    background-color: black;
+    color: white;
+  }
+  

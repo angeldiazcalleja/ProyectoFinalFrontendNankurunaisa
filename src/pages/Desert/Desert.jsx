@@ -9,7 +9,7 @@ export const Desert = () => {
         <span className="desertTitle"> Nankurunaisa Moments</span>
         <p className="desertSubtitle">--Activities and Experiences--</p>
         <p className="activitiesText">
-          En Nankurunaisa, We Offer Activities That Aim To Connect With
+          In Nankurunaisa, We Offer Activities That Aim To Connect With
           Everything That Is Sometimes Difficult To Remember In Our Daily Lives.
         </p>
         <p className="activitiesText">

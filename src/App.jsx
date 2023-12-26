@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './common/Footer/Footer';
 import { Header } from './common/Header/Header'
 import { Router } from './pages/Routes/Router';
 import smoothscroll from 'smoothscroll-polyfill';
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header/>
       <Router/>
+      <Footer/>
     </>
   )
 }
