@@ -129,7 +129,7 @@ export const RegisterUser = () => {
                 />
                 <div className="errorRedMsg">{userError.phoneError}</div>
                 <button className="buttonSignUp" onClick={registerHandler}>
-                  || SIGN UP ||
+                🌀 SIGN UP 🌀
                 </button>
               </div>
             </div>

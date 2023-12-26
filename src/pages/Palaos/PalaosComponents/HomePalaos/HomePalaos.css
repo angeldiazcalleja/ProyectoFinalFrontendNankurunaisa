@@ -1,28 +1,26 @@
-.home-container {
+.home-containerPalaos {
     position: relative;
     width: 100vw;
     height: 58.5em;
-    overflow: hidden; 
-    background: url("../../assets/HomeVideo.gif") no-repeat center center fixed;
+    background: url("../../../../assets/Palaos/Img28edit.jpg"); 
     background-size: cover;
-    margin-left: -0.5em;
-    margin-top: -0.5em;
+    background-position: -5em; 
     overflow-x: hidden;
-
   }
   
-  .titleHome{
+  
+  .titleHomePalaos{
     font-size: 3.5em;
     color: white;
     margin-left: 1.8em;
-    margin-top: 13em;
+    margin-top: 14.2em;
   }
 
-  .titleContainer{
+  .titleContainerPalaos{
     margin-top: 40em;
   }
 
-  .lineHome {
+  .lineHomePalaos {
     width: 4em;
     height: 50px; 
     margin-left: 3.6em;
@@ -32,7 +30,7 @@
   
   }
   
-  .lineHome:before {
+  .lineHomePalaos:before {
     content: "";
     width: 100%;
     border-bottom: solid 3px rgba(255, 255, 255, 0.452);

@@ -1,5 +1,4 @@
 import "./Home.css";
-// import logo from "../../assets/LogoHome.png";
 
 export const Home = () => {
   return (

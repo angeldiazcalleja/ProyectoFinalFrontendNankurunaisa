@@ -4,12 +4,10 @@ import { Palaos } from "../Palaos/Palaos";
 import { Login } from "../Login/Login";
 import Footer from "../../common/Footer/Footer";
 import { RegisterUser } from "../Register/Register";
-
+import Header from "../../common/Header/Header";
 
 
 export const Router = () => {
-
-
   return (
     <>
       <Routes>
@@ -30,37 +28,35 @@ export const Router = () => {
             </>
           }
         />
-          <Route
+        <Route
           path="/palaos"
           element={
             <>
+              {/* <Footer showFooter={true} /> */}
               <Palaos />
             </>
           }
         />
+
         <Route
           path="/login"
           element={
             <>
-               <Footer showFooter={false} />
+              <Header />
               <Login />
-           
+              <Footer showFooter={false} />
             </>
           }
         />
-         <Route
+        <Route
           path="/register"
           element={
             <>
-            <Footer showFooter={false} />
+              <Footer showFooter={false} />
               <RegisterUser />
-              
-              
             </>
           }
         />
-       
-
       </Routes>
     </>
   );
