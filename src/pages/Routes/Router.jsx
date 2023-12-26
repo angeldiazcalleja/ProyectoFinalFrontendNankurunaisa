@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { MainView } from "../Main/MainView";
 import { Palaos } from "../Palaos/Palaos";
+import { Login } from "../Login/Login";
 // import Header from "../../common/Header/Header";
 
 
@@ -31,6 +32,14 @@ export const Router = () => {
           element={
             <>
               <Palaos />
+            </>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <>
+              <Login />
             </>
           }
         />
