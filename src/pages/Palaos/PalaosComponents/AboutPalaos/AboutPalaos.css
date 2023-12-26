@@ -1,0 +1,34 @@
+.aboutContainerPalaos {
+    position: relative;
+    width: 100vw;
+    height: 40em;
+    overflow: hidden;
+    background-size: cover;
+    margin-left: -0.6em;
+  }
+  
+  .AboutImagePalaos {
+    width: 100%; 
+    height: auto;
+  }
+  
+  .contentOverlayPalaos {
+    position: absolute;
+    max-width: 80%;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 10em;
+    margin-top: 2em;
+  }
+  
+  .aboutTextPalaos {
+      color: white; 
+      font-size: 4em; 
+      text-align: center;
+      line-height: 1.5em;
+      margin-left: 9em;
+      margin-top: 4em;
+      font-variant: all-petite-caps;
+  }
+  
+  
