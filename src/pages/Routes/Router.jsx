@@ -3,6 +3,7 @@ import { MainView } from "../Main/MainView";
 import { Palaos } from "../Palaos/Palaos";
 import { Login } from "../Login/Login";
 import Footer from "../../common/Footer/Footer";
+import { RegisterUser } from "../Register/Register";
 
 
 
@@ -12,7 +13,6 @@ export const Router = () => {
   return (
     <>
       <Routes>
-      {location.pathname !== '/login' && <Footer/>} 
         <Route
           path="*"
           element={
@@ -26,6 +26,7 @@ export const Router = () => {
           element={
             <>
               <MainView />
+              <Footer showFooter={true} />
             </>
           }
         />
@@ -41,9 +42,20 @@ export const Router = () => {
           path="/login"
           element={
             <>
-             
+               <Footer showFooter={false} />
               <Login />
-              <Footer showFooter={false} />
+           
+            </>
+          }
+        />
+         <Route
+          path="/register"
+          element={
+            <>
+            <Footer showFooter={false} />
+              <RegisterUser />
+              
+              
             </>
           }
         />

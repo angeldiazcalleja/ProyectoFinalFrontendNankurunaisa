@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.containerSign {
+  background: url("../../assets/bdRegister.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.changeLogIn {
+  text-align: center;
+  font-family: "Miltonian Tattoo";
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: -2em;
+}
+
+.changeLogInText {
+  color: white;
+}
+
+.changeLogInText:hover {
+  color: black;
+  font-size: 28px;
+}
+
+.textSign {
+  font-size: 5em;
+  color: black;
+  font-weight: bold;
+  font-family: "Miltonian Tattoo";
+  text-align: center;
+  margin-top: -0.5em;
+}
+
+.changeLogIn {
+  text-align: center;
+  font-family: "Miltonian Tattoo";
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: -2em;
+}
+
+.changeLogInText {
+  color: grey;
+}
+
+.changeLogInText:hover {
+  color: black;
+  font-size: 28px;
+}
+
+.buttonSignUp {
+  width: 12em;
+  height: 3.5em;
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: white;
+  font-family: "Miltonian Tattoo";
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10em;
+  margin-left: 2.35em;
+  margin-top: 0.6em;
+}
+
+.buttonSignUp:hover {
+    background-color:  rgba(255, 245, 238, 0.763);
+}
+
+.cardSign0 {
+  background-color: rgba(255, 255, 255, 0.603);
+  width: 30em;
+  height: 42em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4em;
+}
+
+.cardSign1 {
+  background-color: rgba(255, 245, 238, 0.763);
+  width: 25em;
+  height: 38em;
+  border-radius: 4em;
+}
+
+.BiXIcon {
+  color: black;
+  font-size: 5em;
+  cursor: pointer;
+  margin-left: 15em;
+  margin-bottom: 1em;
+}
+
+.errorRedMsg {
+  color: black;
+  text-align: center;
+  margin-bottom: 0.4em;
+  margin-top: 0.3em;
+}
