@@ -2,18 +2,21 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { MainView } from "../Main/MainView";
 import { Palaos } from "../Palaos/Palaos";
 import { Login } from "../Login/Login";
-// import Header from "../../common/Header/Header";
+import Footer from "../../common/Footer/Footer";
+
 
 
 export const Router = () => {
+
+
   return (
     <>
       <Routes>
+      {location.pathname !== '/login' && <Footer/>} 
         <Route
           path="*"
           element={
             <>
-              {/* <Header showHeader={true} /> */}
               <Navigate to="/" />
             </>
           }
@@ -22,7 +25,6 @@ export const Router = () => {
           path="/"
           element={
             <>
-              {/* <Header showHeader={true} /> */}
               <MainView />
             </>
           }
@@ -39,10 +41,13 @@ export const Router = () => {
           path="/login"
           element={
             <>
+             
               <Login />
+              <Footer showFooter={false} />
             </>
           }
         />
+       
 
       </Routes>
     </>

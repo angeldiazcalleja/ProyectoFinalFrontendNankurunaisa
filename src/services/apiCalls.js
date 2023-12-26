@@ -21,7 +21,6 @@ export const registerUser = async (data) => {
 };
 
 
-
 export const getAllUsers = async (token, page) => {
   try {
     const response = await axios.get("http://localhost:3000/users", {

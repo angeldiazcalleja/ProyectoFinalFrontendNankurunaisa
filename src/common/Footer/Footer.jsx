@@ -1,60 +1,3 @@
-// import ImgFooter from "../../assets/ImgFooter.jpg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faTwitter,
-//   faFacebook,
-//   faInstagram,
-// } from "@fortawesome/free-brands-svg-icons";
-
-// import "./Footer.css";
-
-// export const Footer = () => {
-//   return (
-//     <div className="footerContainer">
-//       <div className="footerContainerImg">
-//         <img
-//           className="africanWomanFooter"
-//           src={ImgFooter}
-//           alt="African Woman"
-//         />
-//       </div>
-
-//       <div className="lineContactBottom"></div>
-//       <div className="footerInformation">
-//         <span>|| Nankurunaisa ||</span>
-//         <span>|| Cookie Policy ||</span>
-//         <span>|| Legal Information ||</span>
-//         <span>|| Privacy Policy ||</span>
-//         <span>|| Terms and Conditions ||</span>
-//       </div>
-//       <div className="lineContactBottom"></div>
-//       <div className="customSocial">
-//             <a>
-//               <FontAwesomeIcon
-//                 icon={faTwitter}
-//                 style={{ color: "white", fontSize: "32px" }}
-//               />
-//               <span className="d-lg-none ml-3">Twitter</span>
-//             </a>
-//             <a>
-//               <FontAwesomeIcon
-//                 icon={faInstagram}
-//                 style={{ color: "white", fontSize: "32px" }}
-//               />
-//               <span className="d-lg-none ml-3">Instagram</span>
-//             </a>
-//             <a>
-//               <FontAwesomeIcon
-//                 icon={faFacebook}
-//                 style={{ color: "white", fontSize: "32px" }}
-//               />
-//               <span className="d-lg-none ml-3">Facebook</span>
-//             </a>
-//           </div>
-//     </div>
-//   );
-// };
-
 import ImgFooter from "../../assets/ImgFooter.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -65,10 +8,13 @@ import {
 
 import "./Footer.css";
 
-export const Footer = () => {
+// eslint-disable-next-line react/prop-types
+export const Footer = ({ showFooter }) => {
+    const footerClass = showFooter ? "footerContainer" : "footerContainer hidden";
+
   return (
+    <footer className={footerClass}>
     <div className="footerContainer">
-      {/* Sección de la imagen */}
       <div className="footerContainerImg">
         <img
           className="africanWomanFooter"
@@ -129,6 +75,7 @@ export const Footer = () => {
         </a>
       </div>
     </div>
+    </footer>
   );
 };
 

@@ -5,9 +5,8 @@ import { login } from "../../services/apiCalls";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import { useDispatch, useSelector } from "react-redux";
-import { userLogin, userLogout } from "../userSlice";
-import { Header } from "../../common/Header/Header";
+import { useDispatch } from "react-redux";
+import { userLogin } from "../userSlice";
 import { validate } from "../../services/useFul";
 
 export const Login = () => {
@@ -15,7 +14,6 @@ export const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [msg, setMsg] = useState("");
-  const userState = useSelector((state) => state.user);
 
   const [userError, setUserError] = useState({
     emailError: "",
@@ -42,11 +40,6 @@ export const Login = () => {
       });
   };
 
-  const logoutHandler = () => {
-    dispatch(userLogout());
-    navigate("/")
-  };
-
   const handleGoToHome = () => {
     navigate("/");
   };
@@ -67,8 +60,6 @@ export const Login = () => {
 
   return (
     <>
-      <Header showHeader={false} />
-
       <div className="containerLogin">
         {msg !== "" ? (
           <div className="containerMsg">
@@ -98,7 +89,7 @@ export const Login = () => {
                   handler={inputHandler}
                   functionError={checkError}
                 />
-                <div className="errorRedMsg0">{userError.emailError}</div>
+                <div className="errorBlackMsg0">{userError.emailError}</div>
                 <Inputs
                   text={"Password"}
                   type={"password"}
@@ -107,15 +98,10 @@ export const Login = () => {
                   handler={inputHandler}
                   functionError={checkError}
                 />
-                <div className="errorRedMsg1">{userError.passwordError}</div>
+                <div className="errorBlackMsg1">{userError.passwordError}</div>
                 <button className="buttonLogin" onClick={loginHandler}>
-                  || LOG IN ||
+                🌀 LOG IN 🌀
                 </button>
-                {userState.token && (
-                  <button className="buttonLogout" onClick={logoutHandler}>
-                  || LOG OUT ||
-                  </button>
-                )}
               </div>
             </div>
           </>

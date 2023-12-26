@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.hidden {
+    display: none; 
+  }
+  
+
 img.africanWomanFooter {
   height: 32em;
   width: 127em;
