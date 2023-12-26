@@ -1,4 +1,5 @@
 import "./Palaos.css";
+import GalleryPalaos from "./PalaosComponents/GalleryPalaos/GalleryPalaos";
 import HomePalaos from "./PalaosComponents/HomePalaos/HomePalaos";
 
 export const Palaos = () => {
@@ -7,6 +8,7 @@ export const Palaos = () => {
     <div className="palaosView">
    
     <HomePalaos/>
+    <GalleryPalaos/>
 
 
 
