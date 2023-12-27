@@ -1,4 +1,84 @@
-.wellnessPalaosContainer{
-    width: 100%;
-    height: 50em;
+.wellnessPalaosContainer {
+  width: 100%;
+  height: 100em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
+.wellnessTextContainer {
+  flex: 1;
+  margin-left: -20em;
+}
+
+.wellnessVideoContainer {
+  flex: 1;
+  width: 80em;
+  margin-top: 43em;
+  margin-right: -15em;
+}
+
+.wellnessVideoContainer iframe {
+  width: 100%;
+  height: 50em;
+}
+
+.wellnessTitleContainer {
+  margin-top: 12em;
+  text-transform: uppercase;
+  font-variant: all-petite-caps;
+  font-size: 3.8em;
+  margin-left: 4.5em;
+  color: #7a5130;
+}
+
+.textWellness{
+    text-align: center;
+    max-width: 50%;
+    margin-left: 9.5em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: 2.5em;
+    color: #7a5130;
+}
+
+
+.lineWellness {
+    color: #7a5130;
+    width: 20%;
+    height: 10px;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    margin-top: 1.5em;
+    margin-left: 13.3em;
+ 
+  }
+  
+  .lineWellness:before {
+    content: "";
+    width: 100%;
+    border-bottom: solid 3px  #7a5130 ;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+ 
+
+  .wellnessGalleryButtom{
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-variant: all-petite-caps;
+    font-size: 2.8em;
+    margin-left: 7.4em;
+    color: #7a5130;
+   text-decoration: 2px underline;  
+  }
+
+  
+  .wellnessGalleryButtom:hover{
+   color: #7a5130b3;
+  }

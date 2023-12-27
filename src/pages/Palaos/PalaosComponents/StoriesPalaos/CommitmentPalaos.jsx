@@ -33,7 +33,7 @@ export const CommitmentPalaos = () => {
         <p>You will explore the marine world and its diversity.</p>
       </div>
 
-      <div className="commitmentButton">Read Our Works</div>
+      <div className="commitmentButton">See Our Works</div>
     </div>
   );
 };
