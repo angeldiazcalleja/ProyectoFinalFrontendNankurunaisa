@@ -5,6 +5,7 @@ import GalleryPalaos from "./PalaosComponents/GalleryPalaos/GalleryPalaos";
 import HomePalaos from "./PalaosComponents/HomePalaos/HomePalaos";
 import { LocationPalaos } from "./PalaosComponents/LocationPalaos/LocationPalaos";
 import { WellnessPalaos } from "./PalaosComponents/WellnessPalaos/WellnessPalaos";
+import Villas from "./PalaosComponents/Villas/Villas";
 
 
 export const Palaos = () => {
@@ -18,6 +19,7 @@ export const Palaos = () => {
     <CommitmentPalaos/>
     <LocationPalaos/>
     <WellnessPalaos/>
+    <Villas/>
 
 
     </div>

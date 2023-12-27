@@ -1,0 +1,181 @@
+.profileView {
+    background-image: url("../../assets/bgProfile.jpeg");
+    background-size: cover;
+    overflow: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 58em;
+  }
+  
+  
+  .profileSidebar {
+    width: 70em;
+    height: 4em;
+    background-color: rgba(255, 255, 255, 0.689);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 12em;
+    margin-left: 30em;
+    border-radius: 7px;
+    border:#E86448 3px solid 
+  }
+  
+  .sidebarText {
+    font-size: 2.2em;
+    font-variant: all-petite-caps;
+    text-align: center;
+    margin-left: -1.8em;
+    color: #E86448;
+   
+  }
+  
+  .sidebarItem {
+    color: #E86448;
+    cursor: pointer;
+  }
+  
+  .profileContent {
+    width: 70em;
+    margin-top: 1em;
+    border: 1px solid #333;
+    margin-top: 1em;
+    margin-left: 30em;
+    height: 30em;
+    background-color: rgba(255, 255, 255, 0.686);
+    color: #E86448;
+    border-radius: 7px;
+    border:#E86448 3px solid 
+  }
+  
+  .titleProfile {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5em;
+    margin-top: 1em;
+  
+  }
+  
+  .buttonEditProfile {
+    width: 9em;
+    height: 2.5em;
+    border-radius: 7px;
+    background-color: black;
+    color: #efb810;
+    border: 2px solid #efb810;
+    margin-right: 8em;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .buttonEditProfile:hover {
+    background-color: #efb710a1;
+    color: white;
+  }
+  
+  .lineProfile {
+    width: 90%;
+    height: 10px;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    margin-left: 2em;
+  }
+  
+  .lineProfile:before {
+    content: "";
+    width: 100%;
+    border-bottom: solid 5px white;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .inputContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 6em;
+      margin-right: 6em;
+      padding: 0.2em;
+      height: 8em;
+  
+     
+    }
+  
+    
+  .inputContainer1 {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 6em;
+      margin-right: 6em;
+      padding: 0.2em;
+      height: 9em;
+  
+    
+    }
+    
+    .inputContainer label, .inputContainer1 label{
+      color: white;
+      text-align: center;
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 8em;
+    }
+    
+    .infoProfile {
+      font-weight: bold;
+      border: 2px solid white;
+      width: 25em;
+      height: 3em;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      margin-bottom: 0.5em;
+  
+    }
+  
+    .profileHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+  .informationEditProfile{
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 43em;
+      margin-bottom: 1em;
+  }
+  
+  .buttonSaveChanges {
+    width: 20em;
+    height: 3.5em;
+    border-radius: 7px;
+    background-color: black;
+    color: #efb810;
+    border: 2px solid #efb810;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 25em;
+  
+  }
+  
+  .buttonSaveChanges:hover {
+    background-color: #efb710a1;
+    color: white;
+  }
+  
+  .infoChangeProfile{
+    margin-left: 4.5em;
+    font-weight: bold;
+    width: 17em;
+    margin-top: 1em;
+  
+  }
+  
+  .custom-input[disabled] {
+    background-color: #fff; 
+  }

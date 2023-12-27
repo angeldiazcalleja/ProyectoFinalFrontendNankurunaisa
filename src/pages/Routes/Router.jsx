@@ -5,7 +5,8 @@ import { Login } from "../Login/Login";
 import Footer from "../../common/Footer/Footer";
 import { RegisterUser } from "../Register/Register";
 import Header from "../../common/Header/Header";
-
+import Profile from "../Profile/Profile";
+import { DivePalaos } from "../Palaos/PalaosComponents/DivePalaos/DivePalaos";
 
 export const Router = () => {
   return (
@@ -39,6 +40,16 @@ export const Router = () => {
         />
 
         <Route
+          path="/divepalaos"
+          element={
+            <>
+              <Footer showFooter={false} />
+              <DivePalaos />
+            </>
+          }
+        />
+
+        <Route
           path="/login"
           element={
             <>
@@ -57,7 +68,16 @@ export const Router = () => {
             </>
           }
         />
-        
+        <Route
+          path="/profile"
+          element={
+            <>
+              <Header />
+              <Profile />
+              <Footer showFooter={false} />
+            </>
+          }
+        />
       </Routes>
     </>
   );

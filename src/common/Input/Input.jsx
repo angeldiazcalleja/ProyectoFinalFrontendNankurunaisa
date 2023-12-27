@@ -1,7 +1,18 @@
 /* eslint-disable react/prop-types */
-import './Input.css'; 
+import './Input.css';
 
-const Inputs = ({ text, type, name,value, isDisabled, handler,functionError }) => {
+const Inputs = ({ text, type, name, value, isDisabled, handler, functionError }) => {
+  const handleBlur = (e) => {
+    try {
+      // Llama a la función proporcionada por functionError y maneja cualquier error
+      if (functionError) {
+        functionError(e);
+      }
+    } catch (error) {
+      console.error('Error in Inputs onBlur:', error);
+    }
+  };
+
   return (
     <div className="custom-input-wrapper">
       <input
@@ -11,7 +22,7 @@ const Inputs = ({ text, type, name,value, isDisabled, handler,functionError }) =
         value={value}
         onChange={(e) => handler(e)}
         maxLength={50}
-        onBlur={(e)=>functionError(e)}
+        onBlur={handleBlur}
         disabled={isDisabled}
         className={`custom-input ${isDisabled ? 'disabled' : ''}`}
       />
@@ -20,6 +31,3 @@ const Inputs = ({ text, type, name,value, isDisabled, handler,functionError }) =
 };
 
 export default Inputs;
-
-
-

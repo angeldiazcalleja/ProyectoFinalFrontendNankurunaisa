@@ -1,6 +1,7 @@
 import "./CommitmentPalaos.css";
 import Img1 from "../../../../assets/Palaos/Img1.jpg";
 import Img2 from "../../../../assets/Palaos/Img3.jpg";
+import { Link } from "react-router-dom";
 
 export const CommitmentPalaos = () => {
   return (
@@ -32,8 +33,9 @@ export const CommitmentPalaos = () => {
         </p>
         <p>You will explore the marine world and its diversity.</p>
       </div>
-
+      <Link to="/divepalaos">
       <div className="commitmentButton">See Our Works</div>
+      </Link>
     </div>
   );
 };

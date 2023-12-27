@@ -1,6 +1,6 @@
 import "./WellnessPalaos.css";
 
-const WellnessPalaos = () => {
+export const WellnessPalaos = () => {
   return (
     <div className="wellnessPalaosContainer">
       <div className="wellnessTextContainer">
@@ -17,7 +17,7 @@ const WellnessPalaos = () => {
           practices rooted in Mayan culture.
         </p>
         <div className="wellnessGalleryButtom">
-            Explore More
+            Review More
         </div>
       </div>
       <div className="wellnessVideoContainer">
@@ -27,7 +27,7 @@ const WellnessPalaos = () => {
           frameBorder="0"
           webkitallowfullscreen=""
           mozallowfullscreen=""
-          allowfullscreen=""
+          allowFullScreen=""
           data-rocket-lazyload="fitvidscompatible"
           data-lazy-src="https://player.vimeo.com/video/643162676?background=1"
           data-ll-status="loaded"
