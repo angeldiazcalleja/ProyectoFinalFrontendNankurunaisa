@@ -4,6 +4,7 @@ import Img28 from "../../assets/Destinations/Img19.jpg";
 import Img1 from "../../assets/Destinations/Img22.jpg";
 import Img2 from "../../assets/Destinations/Img20.jpg";
 import Img44 from "../../assets/Img44.jpg";
+import { Link } from "react-router-dom";
 
 const Destinations = () => {
   const [hovered1, setHovered1] = useState(false);
@@ -34,6 +35,7 @@ const Destinations = () => {
             onMouseOver={() => setHovered2(true)}
             onMouseOut={() => setHovered2(false)}
           />
+          <Link to="/palaos">
           <img
             src={Img28}
             alt="Destination 3"
@@ -41,6 +43,7 @@ const Destinations = () => {
             onMouseOver={() => setHovered3(true)}
             onMouseOut={() => setHovered3(false)}
           />
+           </Link>
         </div>
       </div>
 

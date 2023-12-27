@@ -1,0 +1,78 @@
+
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+		i.setAttribute('alt', '');\
+		i.setAttribute('src', 'https://ad.doubleclick.net/ddm/activity/src=11115436;type=track0;cat=habit0;qty=1;cost=0;u1=s%253Dccid_ga%257Cccid_auto%257Cf_v%253Dcp_v3_js%257Cp_v%253D3%257Cversion%253D5%257Cauto_url%253Dhttps%25253A%25252F%25252Fwww.ourhabitas.com%25252Fbacalar%25252Fwellness%25252F%257Cauto_ccid%253Dsck63-40w94-mfjsh-1jsfg-ki46b%257Cauto_ga%253D763185137.1703373272%257Cauto_eml_count%253D2%257Cws%253D1536x695%257Ctz%253D-60%257Cn%253Dtf%25253ANGd8MTB8NTB8OHwxNnxlcy1FU3xlcy1FUyxlcyxnbCxlbnxXaW4zMnxmYWxzZXxXaW5kb3dzfDEuMjV8MjR8MjR8MTUzNnw4MTZ8NDI5NDcwNTE1MnxFdXJvcGUvTWFkcmlkfGZhbHNl%257Cpc%253D%25252Fbacalar%25252Fwellness%25252F%257Chpid%253D41781%257Cpt%253DTRACKING%257Chpr%253DHabitas%252520Bacalar%257Cet%253D;u2=;u3=;u4=;u5=;u6=;u8=;u9=;u10=;u11=;u12=;u13=;u14=;u15=;u16=%252Fbacalar%252Fwellness%252F;u17=;u18=;u19=41781;u20=Habitas%2BBacalar;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=orderID');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    
+  (function () {
+  !function (f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.agent='trplsojern';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','1289546481541134');
+  fbq('trackSingle','1289546481541134','PageView');
+  fbq('trackSingleCustom','1289546481541134','Tracking',{content_type:"hotel",custom_param13:"Habitas%2BBacalar",content_ids:["41781"],value:0,purchase_value:0,custom_param10:"%252Fbacalar%252Fwellness%252F"});
+  })();
+window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : (window._adftrack ? [window._adftrack] : []);
+window._adftrack.push({
+	HttpHost: 'a2.adform.net',
+	pm: 3053096,
+	divider: encodeURIComponent('|'),
+	pagename: encodeURIComponent('Habitas Bacalar -- TRACKING 318778')});
+(function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://s2.adform.net/banners/scripts/st/trackpoint-async.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+!function(){const e=["cm.g.doubleclick.net","eu-u.openx.net","tags.bluekai.com","simage2.pubmatic.com","ups.analytics.yahoo.com","secure.adnxs.com","eb2.3lift.com","t.visx.net","x.bidswitch.net","dsum-sec.casalemedia.com","ps.eyeota.net","token.rubiconproject.com","pixel.tapad.com","uipglob.semasio.net","idsync.rlcdn.com","match.adsrvr.org","id5-sync.com","sync.teads.tv","s.ad.smaato.net","pixel.tapad.com","rtb-csync.smartadserver.com","pixel.onaudience.com","ad.yieldlab.net","pdw-adf.userreport.com","aa.agkn.com","api.adrtx.net","ih.adscale.de","redirect.frontend.weborama","e1.emxdgt.com","pixel.mathtag.com"];var t;(t='iframe[src*="https://c1.adform.net/imatch/pixels?uid="]',new Promise(((e,s)=>{new MutationObserver(((s,a)=>{const c=document.querySelector(t);c&&(a.disconnect(),e(c))})).observe(document,{childList:!0,subtree:!0})}))).then((t=>{const s=JSON.parse(JSON.stringify(t.src));t.src="";const a=new XMLHttpRequest;a.open("GET",s),a.withCredentials=!0,a.onload=function(){!function(t,s){var a=t.responseText.replace(/\ssrc="/g,' data-src="').replace("</body>",'<script> var allowList = "'+e.join(";")+"\".split(';');var images = document.querySelectorAll('img');for(var i = 0, l = images.length; i < l; i++){if(allowList.indexOf(images[i].getAttribute('data-src').split('https://')[1].split('/')[0]) !== -1){images[i].src = images[i].getAttribute('data-src');}}<\/script></body>");s.src="data:text/html;charset=utf-8,"+encodeURIComponent(a)}(this,t)},a.send()}))}();
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_hm=wg9MKZca8WwNVQwRumAcIA&google_nid=sojern_adh');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    
+    (function () {
+        var s = document.createElement('script');
+        var p = "var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://match.adsrvr.org/track/cmf/generic?ttd_pid=ombl9hp&ttd_puid=J9ol4e2ZLOzDf3Jv147qHYJ43Y5UWtQjUCd_Yk76xJrlM_s7az4TqXgj11OiJH9W&ttd_tpi=1');\
+    document.body.appendChild(i);\
+";
+
+        s.type = 'text/javascript';
+        s.async = true;
+        if (s.textContent) {
+            s.textContent = p;
+        } else {
+            s.text = p;
+        }
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    
