@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./WellnessPalaos.css";
 
 export const WellnessPalaos = () => {
@@ -16,9 +17,11 @@ export const WellnessPalaos = () => {
           and immerse yourself in the rich tapestry of local traditions and
           practices rooted in Mayan culture.
         </p>
+        <Link to="/wellnesspalaosgallery">
         <div className="wellnessGalleryButtom">
             Review More
         </div>
+        </Link>
       </div>
       <div className="wellnessVideoContainer">
         <iframe

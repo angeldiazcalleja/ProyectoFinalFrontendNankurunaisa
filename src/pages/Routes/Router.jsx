@@ -7,6 +7,7 @@ import { RegisterUser } from "../Register/Register";
 import Header from "../../common/Header/Header";
 import Profile from "../Profile/Profile";
 import { DivePalaos } from "../Palaos/PalaosComponents/DivePalaos/DivePalaos";
+import WellnessPalaosGallery from "../Palaos/PalaosComponents/WellnessPalaosGallery/WellnessPalaosGallery";
 
 export const Router = () => {
   return (
@@ -45,6 +46,16 @@ export const Router = () => {
             <>
               <Footer showFooter={false} />
               <DivePalaos />
+            </>
+          }
+        />
+
+        <Route
+          path="/wellnesspalaosgallery"
+          element={
+            <>
+              <Footer showFooter={false} />
+              <WellnessPalaosGallery />
             </>
           }
         />
