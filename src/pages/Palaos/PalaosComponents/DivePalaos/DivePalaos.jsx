@@ -45,7 +45,7 @@ export const DivePalaos = () => {
           <div className="imagesContainer">
             <img src={Img2} alt="Coral Reef 2" className="rightImage" />
           </div>
-          <div className="textContainer">
+          <div className="textContainer1">
             <p>
               Just beneath the oceans surface, where the suns intense rays
               transition into a realm of life, dynamic coral reefs come to

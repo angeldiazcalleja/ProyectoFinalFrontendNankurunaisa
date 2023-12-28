@@ -1,51 +1,146 @@
 .header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.3s ease;
-  }
-  
-  .header.scrolled {
-    background-color: black; /* Color de fondo cuando se hace scroll */
-  }
-  
-  .menuIcon {
-    cursor: pointer;
-    padding: 4.5em;
-    color: white;
-  }
-  
-  .menu-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 30em;
-    background-color: rgba(0, 0, 0, 0.485);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
 
-  }
-  
-   .centeredImage{
-    width: 22em;
-    height: 15em;
-    margin-right: 53em;
-} 
+.header.scrolled {
+  background-color: black; /* Color de fondo cuando se hace scroll */
+}
 
-.sidebarImage{
-    width: 28em;
-    height: 18em;
-    margin-top: -4em;
- 
+.menuIcon {
+  cursor: pointer;
+  padding: 4.5em;
+  color: white;
+}
+
+.menu-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 30em;
+  background-color: rgba(0, 0, 0, 0.485);
+  /* transform: translateY(0); */
+}
+
+.centeredImage {
+  width: 22em;
+  height: 15em;
+  margin-right: 53em;
+}
+
+.sidebarImage {
+  width: 28em;
+  height: 18em;
+  margin-top: -4em;
+}
+
+
+.closeIcon {
+  margin-left: 27em;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+.closeIcon2{
+  color: white;
+  width: 3em;
+  height: 3em;
 
 }
 
-.closeIcon{
-    margin-left: 24em;
-    margin-top: 1.5em;
+.menu-section1 {
+  margin-top: -1.5em;
+  margin-left: 5.8em;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  font-variant: all-petite-caps;
 }
+
+.menu-section2 {
+  margin-top: 1em;
+  margin-left: 4.2em;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  font-variant: all-petite-caps;
+}
+
+.menu-section3 {
+  margin-top: 1em;
+  margin-left: 5.3em;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  font-variant: all-petite-caps;
+}
+
+.arrow-icon {
+  font-size: 0.7em; 
+}
+
+.menu-item {
+  margin-left: 0.8em;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.5em;
+}
+
+
+.menu-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+
+ .icon1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 10em;
+  margin-left: 2em;
+  color: white;
+  margin-bottom: -2em;
+
+
+}
+
+.icon2 {
+  font-size: 1.5em;
+  margin-top: 1em;  margin-left: 2em;
+  color: white;
+  margin-top: -3.8em;
+
+
+}
+
+.loginTitleIcon{
+  font-variant: all-petite-caps;
+  font-size: 2em;
+  color: white;
+  margin-top: 0.4em;
+  margin-left: 3em;
+
+}
+
+.registerTitleIcon{
+  font-variant: all-petite-caps;
+  font-size: 2em;
+  color: white;
+  margin-top: -1.1em;
+  margin-left: 3em;
+
+}  
+
+
+
+
+
