@@ -74,7 +74,7 @@ export const Header = () => {
             <FaTimes className="closeIcon2" />
           </div>
           <img src={Logo} alt="Logo" className="sidebarImage" />
-          <Link to="/home" className="menu-link">
+          <Link to="/home" className="menu-link"  onClick={closeMenu}>
             <div className="menu-section1">HOME</div>
           </Link>
           <div className="menu-section2" onClick={toggleDestinations}>
@@ -82,7 +82,7 @@ export const Header = () => {
             <span className="arrow-icon">{isDestinationsOpen ? "▼" : "▶"}</span>
             {isDestinationsOpen && (
               <div className="destinations-menu">
-                <Link to="/palaos" className="menu-link">
+                <Link to="/palaos" className="menu-link"  onClick={closeMenu}>
                   <div className="menu-item">Palaos</div>
                 </Link>
                 <div className="menu-item">BoaVista</div>

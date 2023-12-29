@@ -5,7 +5,9 @@ import { getAllUsers } from "../../services/apiCalls";
 import { userData } from "../userSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward } from "@fortawesome/free-solid-svg-icons";
+import Img1 from "../../assets/viewAdmin.jpeg";
 import "./Admin.css";
+import Appointments from "../Appointments/Appointments";
 
 const Admin = () => {
   const user = useSelector(userData);
@@ -16,7 +18,7 @@ const Admin = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchRole, setSearchRole] = useState("");
   const [sortOrder, setSortOrder] = useState("ASC");
-  const [searchName, setSearchName] = useState(""); 
+  const [searchName, setSearchName] = useState("");
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -38,7 +40,10 @@ const Admin = () => {
         return false;
       }
 
-      if (searchName && !user.name.toLowerCase().includes(searchName.toLowerCase())) {
+      if (
+        searchName &&
+        !user.name.toLowerCase().includes(searchName.toLowerCase())
+      ) {
         return false;
       }
 
@@ -72,18 +77,18 @@ const Admin = () => {
             value={searchRole}
             onChange={(e) => setSearchRole(e.target.value)}
           >
-             <option className="textSelectuser" value="">
-            All Roles
-          </option>
-          <option className="textSelectuser" value="customer">
-            Customer
-          </option>
-          <option className="textSelectuser" value="personalAssistant">
-            Personal Assistant
-          </option>
-          <option className="textSelectuser" value="admin">
-            Admin
-          </option>
+            <option className="textSelectuser" value="">
+              All Roles
+            </option>
+            <option className="textSelectuser" value="customer">
+              Customer
+            </option>
+            <option className="textSelectuser" value="personalAssistant">
+              Personal Assistant
+            </option>
+            <option className="textSelectuser" value="admin">
+              Admin
+            </option>
           </select>
           <input
             type="text"
@@ -97,9 +102,9 @@ const Admin = () => {
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
-             <option value="ASC">Ascending</option>
-          <option value="DSC">Descending</option>
-        </select>
+            <option value="ASC">Ascending</option>
+            <option value="DSC">Descending</option>
+          </select>
         </div>
 
         <table className="userTable">
@@ -144,6 +149,11 @@ const Admin = () => {
           <FontAwesomeIcon icon={faForward} style={{ color: "white" }} />
         </button>
       </div>
+      <div className="imgAdminMiddle">
+        <img src={Img1} alt="Background" className="AboutImagePalaos" />
+      </div>
+      <div className="appointmentsContainerAdmin"></div>
+      <Appointments/>
     </>
   );
 };

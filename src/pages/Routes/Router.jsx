@@ -9,6 +9,7 @@ import Profile from "../Profile/Profile";
 import { DivePalaos } from "../Palaos/PalaosComponents/DivePalaos/DivePalaos";
 import WellnessPalaosGallery from "../Palaos/PalaosComponents/WellnessPalaosGallery/WellnessPalaosGallery";
 import Admin from "../Admin/Admin";
+import Appointments from "../Appointments/Appointments";
 
 export const Router = () => {
   return (
@@ -37,6 +38,15 @@ export const Router = () => {
             <>
               {/* <Footer showFooter={true} /> */}
               <Palaos />
+            </>
+          }
+        />
+        <Route
+          path="/appointments"
+          element={
+            <>
+              {/* <Footer showFooter={true} /> */}
+              <Appointments />
             </>
           }
         />
