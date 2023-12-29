@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BiX } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../../services/apiCalls";
 import { jwtDecode } from "jwt-decode";
@@ -61,9 +60,6 @@ export const RegisterUser = () => {
     }
   };
 
-  const handleGoToHome = () => {
-    navigate("/");
-  };
 
   const handleGoToLogIn = () => {
     navigate("/login");
@@ -78,7 +74,7 @@ export const RegisterUser = () => {
           </div>
         ) : (
           <>
-            <BiX onClick={handleGoToHome} className="BiXIcon" />
+            
             <div className="cardSign0">
               <div className="cardSign1">
                 <div className="textSign">

@@ -1,4 +1,3 @@
-import { BiX } from "react-icons/bi";
 import Inputs from "../../common/Input/Input";
 import { useState } from "react";
 import { login } from "../../services/apiCalls";
@@ -40,10 +39,6 @@ export const Login = () => {
       });
   };
 
-  const handleGoToHome = () => {
-    navigate("/");
-  };
-
   const handleGoToSignUp = () => {
     navigate("/register");
   };
@@ -67,7 +62,7 @@ export const Login = () => {
           </div>
         ) : (
           <>
-            <BiX onClick={handleGoToHome} className="BiXIcon" />
+          
             <div className="cardLogin0">
               <div className="cardLogin1">
                 <div className="textLogin">

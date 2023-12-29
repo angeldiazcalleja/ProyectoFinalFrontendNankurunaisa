@@ -1,0 +1,133 @@
+.adminContainer{
+    margin-top: 6em;
+    background-image: url("../../assets/bgAdmin.avif");
+    background-size: cover;
+    overflow: hidden;
+    height: 53em;
+}
+
+.home-containerAdmin{
+    position: relative;
+    width: 100vw;
+    height: 58.5em;
+    overflow: hidden; 
+    background: url("../../assets/Imgadmin.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    overflow-x: hidden; 
+}
+
+.titleAdmin{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Miltonian Tattoo";
+    color: #3f888f;
+    margin-top: 0em;
+}
+
+.userTable {
+    width: calc(100% - 8em);
+    margin: 0 4em;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+
+  }
+  
+ .userTable td {
+    border: 1px solid #3f888f;
+    padding: 12px; 
+  }
+
+ .userTable th{
+ background-color: #3f888f;
+ border: 2px solid rgba(0, 0, 0, 0.497);
+ border-radius: 0px;
+ }
+
+ .userTable thead{
+    border: 3px solid #3f888f;
+ }
+
+ tr:hover {
+    background-color: #3f888f;
+  }
+  
+
+ .buttonPage{
+
+    margin-left: 68em;
+    width: 5em;
+    height: 2.5em;
+    margin-top: 2em;
+    border: 2px solid white;;
+ }
+
+ .buttonPage1{
+    width: 5em;
+    height: 2.5em;
+    margin-top: 2em;
+    border: 2px solid white;
+ }
+
+
+.searchControls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 52em;
+    padding-bottom: 2em;
+  }
+  
+  .selectUsers {
+    width: 14em;
+    height: 2.8em;
+    border-radius: 7px;
+    border: 3px solid #3f888f;
+    margin-left: -6.5em;
+  }
+
+  .selectUsers1 {
+    width: 14em;
+    height: 2.8em;
+    border-radius: 7px;
+    border: 3px solid #3f888f;
+    margin-left: 0em;
+  }
+
+  .inputSearchName{
+    width: 14em;
+    height: 2.3em;
+    border-radius: 7px;
+    border: 3px solid #3f888f;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #3f888f; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3f888fa6; 
+  }
+  
+  .textSelectuser{
+    color: black;
+  }
+
+  .textPageAdmin{
+    margin-top: 1.5em;
+    margin-left: 14em;
+    font-size: 3.2em;
+    font-variant: all-petite-caps;
+    color: #3f888f;
+  }

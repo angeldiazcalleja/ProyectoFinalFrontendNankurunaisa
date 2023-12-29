@@ -17,7 +17,6 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDestinationsOpen, setIsDestinationsOpen] = useState(false);
 
-  // Obtener el estado del token desde Redux
   const userToken = useSelector((state) => state.user.token);
 
   useEffect(() => {
@@ -92,7 +91,7 @@ export const Header = () => {
             )}
           </div>
           {userToken && (
-            <Link to="/profile" className="menu-link">
+            <Link to="/profile" className="menu-link"  onClick={closeMenu}>
               <div className="menu-section3">PROFILE</div>
             </Link>
           )}
@@ -107,7 +106,7 @@ export const Header = () => {
             ) : (
               <>
                 <div className="menu-section" onClick={handleLogin}>
-                <Link to="/login" className="menu-link">
+                <Link to="/login" className="menu-link"  onClick={closeMenu}>
                   <FontAwesomeIcon icon={faSignInAlt} className="icon1"/> 
                   <p className="loginTitleIcon">Login</p>
                   </Link>
@@ -115,7 +114,7 @@ export const Header = () => {
               </>
             )}
             <div className="menu-section">
-            <Link to="/register" className="menu-link">
+            <Link to="/register" className="menu-link"  onClick={closeMenu}>
               <FontAwesomeIcon icon={faUserPlus} className="icon2"/> 
               <p className="registerTitleIcon">Register</p>
               </Link>

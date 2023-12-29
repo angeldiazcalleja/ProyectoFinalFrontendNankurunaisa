@@ -8,6 +8,7 @@ import Header from "../../common/Header/Header";
 import Profile from "../Profile/Profile";
 import { DivePalaos } from "../Palaos/PalaosComponents/DivePalaos/DivePalaos";
 import WellnessPalaosGallery from "../Palaos/PalaosComponents/WellnessPalaosGallery/WellnessPalaosGallery";
+import Admin from "../Admin/Admin";
 
 export const Router = () => {
   return (
@@ -76,6 +77,15 @@ export const Router = () => {
             <>
               <Footer showFooter={false} />
               <RegisterUser />
+            </>
+          }
+        />
+         <Route
+          path="/admin"
+          element={
+            <>
+              <Footer showFooter={false} />
+              <Admin />
             </>
           }
         />
