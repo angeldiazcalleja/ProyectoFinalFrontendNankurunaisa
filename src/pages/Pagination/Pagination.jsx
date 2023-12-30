@@ -20,7 +20,7 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     <div className="pagination">
       <button className="buttonPaginationAppointments" onClick={handlePrevClick} disabled={currentPage === 1}>
         <FontAwesomeIcon
-          icon={faForward} rotation={180}  style={{ "--fa-primary-color": "white", "--fa-secondary-color": "#efb810",
+          icon={faForward} rotation={180}  style={{ "--fa-primary-color": "white", "--fa-secondary-color": "#efb810"
           }}
         />
       </button>

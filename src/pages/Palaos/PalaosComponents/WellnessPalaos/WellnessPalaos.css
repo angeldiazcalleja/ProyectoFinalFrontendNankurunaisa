@@ -76,9 +76,11 @@
     margin-left: 7.4em;
     color: #7a5130;
    text-decoration: 2px underline;  
+   text-decoration: none;
   }
 
   
   .wellnessGalleryButtom:hover{
    color: #7a5130b3;
+  text-decoration: none;
   }

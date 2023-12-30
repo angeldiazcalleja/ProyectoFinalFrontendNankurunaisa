@@ -10,6 +10,7 @@ import { DivePalaos } from "../Palaos/PalaosComponents/DivePalaos/DivePalaos";
 import WellnessPalaosGallery from "../Palaos/PalaosComponents/WellnessPalaosGallery/WellnessPalaosGallery";
 import Admin from "../Admin/Admin";
 import Appointments from "../Appointments/Appointments";
+import { PlanningPalaos } from "../Palaos/PalaosComponents/PlanningPalaos/PlanningPalaos";
 
 export const Router = () => {
   return (
@@ -57,6 +58,15 @@ export const Router = () => {
             <>
               <Footer showFooter={false} />
               <DivePalaos />
+            </>
+          }
+        />
+         <Route
+          path="/planningpalaos"
+          element={
+            <>
+              <Footer showFooter={false} />
+              <PlanningPalaos/>
             </>
           }
         />
