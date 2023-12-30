@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/LogoHomeFinal.png";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux"; 
+import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSignInAlt,
@@ -18,6 +18,9 @@ export const Header = () => {
   const [isDestinationsOpen, setIsDestinationsOpen] = useState(false);
 
   const userToken = useSelector((state) => state.user.token);
+  const userRole = useSelector((state) => state.user.credentials.role);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,16 +48,13 @@ export const Header = () => {
   const toggleDestinations = () => {
     setIsDestinationsOpen(!isDestinationsOpen);
   };
-  const handleLogin = () => {
-    console.log("Login logic here");
-  };
+  const handleLogin = () => {};
 
   const dispatch = useDispatch();
 
   const handleLogout = () => {
     dispatch(userLogout());
   };
-
 
   return (
     <header className={`header ${isScrolled || isMenuOpen ? "scrolled" : ""}`}>
@@ -74,7 +74,7 @@ export const Header = () => {
             <FaTimes className="closeIcon2" />
           </div>
           <img src={Logo} alt="Logo" className="sidebarImage" />
-          <Link to="/home" className="menu-link"  onClick={closeMenu}>
+          <Link to="/home" className="menu-link" onClick={closeMenu}>
             <div className="menu-section1">HOME</div>
           </Link>
           <div className="menu-section2" onClick={toggleDestinations}>
@@ -82,7 +82,7 @@ export const Header = () => {
             <span className="arrow-icon">{isDestinationsOpen ? "▼" : "▶"}</span>
             {isDestinationsOpen && (
               <div className="destinations-menu">
-                <Link to="/palaos" className="menu-link"  onClick={closeMenu}>
+                <Link to="/palaos" className="menu-link" onClick={closeMenu}>
                   <div className="menu-item">Palaos</div>
                 </Link>
                 <div className="menu-item">BoaVista</div>
@@ -90,33 +90,41 @@ export const Header = () => {
               </div>
             )}
           </div>
-          {userToken && (
-            <Link to="/profile" className="menu-link"  onClick={closeMenu}>
-              <div className="menu-section3">PROFILE</div>
-            </Link>
+           {userToken && (
+            <div className="menu-options">
+              {userRole === 'admin' && (
+                <Link to="/admin" className="menu-link" onClick={closeMenu}>
+                  <div className="menu-section3">ADMIN</div>
+                </Link>
+              )}
+              <Link to="/profile" className="menu-link" onClick={closeMenu}>
+                <div className="menu-section4">PROFILE</div>
+              </Link>
+            </div>
           )}
+
           <div className="user-icons">
             {userToken ? (
               <>
                 <div className="menu-section" onClick={handleLogout}>
-                  <FontAwesomeIcon icon={faSignOutAlt} className="icon1"/> 
+                  <FontAwesomeIcon icon={faSignOutAlt} className="icon1" />
                   <p className="loginTitleIcon">Logout</p>
                 </div>
               </>
             ) : (
               <>
                 <div className="menu-section" onClick={handleLogin}>
-                <Link to="/login" className="menu-link"  onClick={closeMenu}>
-                  <FontAwesomeIcon icon={faSignInAlt} className="icon1"/> 
-                  <p className="loginTitleIcon">Login</p>
+                  <Link to="/login" className="menu-link" onClick={closeMenu}>
+                    <FontAwesomeIcon icon={faSignInAlt} className="icon1" />
+                    <p className="loginTitleIcon">Login</p>
                   </Link>
                 </div>
               </>
             )}
             <div className="menu-section">
-            <Link to="/register" className="menu-link"  onClick={closeMenu}>
-              <FontAwesomeIcon icon={faUserPlus} className="icon2"/> 
-              <p className="registerTitleIcon">Register</p>
+              <Link to="/register" className="menu-link" onClick={closeMenu}>
+                <FontAwesomeIcon icon={faUserPlus} className="icon2" />
+                <p className="registerTitleIcon">Register</p>
               </Link>
             </div>
           </div>

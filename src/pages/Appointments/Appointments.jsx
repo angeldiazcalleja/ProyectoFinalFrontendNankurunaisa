@@ -5,11 +5,13 @@ import {
   getAppointments,
   deleteAppointment,
   modifyAppointment,
+  restoreDeletedAppointment,
 } from "../../services/apiCalls.js";
 import { useSelector } from "react-redux";
 import { userData } from "../../pages/userSlice.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faUndo } from "@fortawesome/free-solid-svg-icons";
 import AppointmentModal from "./Components/AppointmentModal.jsx";
 import Pagination from "../Pagination/Pagination.jsx";
 import "./Appointments.css";
@@ -51,12 +53,18 @@ export const Appointments = () => {
   };
 
   const handleDelete = async (appointmentId) => {
-    try {
-      markAsDeletedLocally(appointmentId);
-      await deleteAppointment(token, appointmentId);
-      handleAppointmentList();
-    } catch (error) {
-      console.log(error);
+    if (
+      !allMyAppointments.find(
+        (appointment) => appointment._id === appointmentId
+      )?.isDeleted
+    ) {
+      try {
+        markAsDeletedLocally(appointmentId);
+        await deleteAppointment(token, appointmentId);
+        handleAppointmentList();
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -70,6 +78,32 @@ export const Appointments = () => {
     );
   };
 
+  const handleRestore = async (appointmentId) => {
+    console.log('Restore button clicked for ID:', appointmentId);
+    try {
+      const appointmentToRestore = allMyAppointments.find(
+        (appointment) => appointment._id === appointmentId
+      );
+  
+      if (appointmentToRestore && appointmentToRestore.isDeleted) {
+        await restoreDeletedAppointment(token, appointmentId);
+        markAsRestoredLocally(appointmentId);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+
+  const markAsRestoredLocally = (appointmentId) => {
+    setAllMyAppointments((prevAppointments) =>
+      prevAppointments.map((appointment) =>
+        appointment._id === appointmentId && appointment.isDeleted
+          ? { ...appointment, isDeleted: false }
+          : appointment
+      )
+    );
+  };
   const handleSaveChanges = async (appointmentId) => {
     const hasConflicts = checkForConflicts(appointmentId);
 
@@ -149,7 +183,10 @@ export const Appointments = () => {
             </thead>
             <tbody>
               {allMyAppointments.map((e) => (
-                <tr key={e._id} className={e.isDeleted ? "deletedRow" : ""}>
+                <tr
+                  key={e._id}
+                  className={e.isDeleted ? "deletedRow" : ""}
+                >
                   <td>{e._id}</td>
                   <td>{e.nameCustomer}</td>
                   <td>{e.namePersonalAssistant}</td>
@@ -160,14 +197,19 @@ export const Appointments = () => {
                     <FontAwesomeIcon
                       icon={faEdit}
                       onClick={() => handleEdit(e)}
-                      style={{ cursor: "pointer", marginRight: "10px" }}
-                      disabled={e.isDeleted}
+                      className={`action-iconEdit ${e.isDeleted ? "disabled" : ""}`}
                     />
                     <FontAwesomeIcon
                       icon={faTrash}
                       onClick={() => handleDelete(e._id)}
-                      style={{ cursor: "pointer" }}
-                      disabled={e.isDeleted}
+                      className={`action-iconDelete ${e.isDeleted ? "disabled" : ""}`}
+                    />
+                    <FontAwesomeIcon
+                      icon={faUndo}
+                      onClick={() => handleRestore(e._id)}
+                      className={`action-iconRestore restore-icon ${
+                        e.isDeleted ? "" : "disabled"
+                      }`}
                     />
                   </td>
                 </tr>

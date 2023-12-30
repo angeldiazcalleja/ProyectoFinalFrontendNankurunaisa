@@ -117,4 +117,16 @@ export const deleteAppointment = async (token, appointmentId) => {
     }
   );
   return result.data;
+}
+
+export const restoreDeletedAppointment = async (token, appointmentId, formData) => {
+    const result = await axios.put(
+      "http://localhost:3000/appointments/restore/" +appointmentId, formData,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+    )
+    return result.data
 };
