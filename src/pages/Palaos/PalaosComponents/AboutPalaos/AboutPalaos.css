@@ -31,4 +31,25 @@
       font-variant: all-petite-caps;
   }
   
+  .planningPalaosButtom {
+    display: inline-block;
+    padding: 0.8em 3em;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.401); 
+    color: white; 
+    border: 3px solid white; 
+    border-radius: 4px; 
+    text-align: center;
+    margin-left: 26em;
+    margin-top: 2em;
+ 
+  }
+  
+  .planningPalaosButtom:hover {
+    background-color: black;
+    color: white;
+  }
   

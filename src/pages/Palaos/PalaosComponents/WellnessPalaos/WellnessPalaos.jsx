@@ -17,7 +17,7 @@ export const WellnessPalaos = () => {
           and immerse yourself in the rich tapestry of local traditions and
           practices rooted in Mayan culture.
         </p>
-        <Link to="/wellnesspalaosgallery">
+        <Link  className="menu-link" to="/wellnesspalaosgallery">
         <div className="wellnessGalleryButtom">
             Review More
         </div>

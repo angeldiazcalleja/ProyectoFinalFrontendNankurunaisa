@@ -130,3 +130,30 @@ export const restoreDeletedAppointment = async (token, appointmentId, formData) 
     )
     return result.data
 };
+
+
+export const createBooking = async (newBooking, token) => {
+  const result = await axios.post(
+    "http://localhost:3000/bookings",
+    newBooking,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
+  return result.data;
+};
+
+
+export const getBookings = async (token, page) => {
+  const result = await axios.get("http://localhost:3000/bookings", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+    params: {
+      page,
+    },
+  });
+  return result.data;
+};

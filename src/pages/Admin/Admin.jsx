@@ -8,6 +8,7 @@ import { faForward } from "@fortawesome/free-solid-svg-icons";
 import Img1 from "../../assets/viewAdmin.jpeg";
 import "./Admin.css";
 import Appointments from "../Appointments/Appointments";
+import Bookings from "../Bookings/Bookings";
 
 const Admin = () => {
   const user = useSelector(userData);
@@ -154,6 +155,7 @@ const Admin = () => {
       </div>
       <div className="appointmentsContainerAdmin"></div>
       <Appointments/>
+      <Bookings/>
     </>
   );
 };
