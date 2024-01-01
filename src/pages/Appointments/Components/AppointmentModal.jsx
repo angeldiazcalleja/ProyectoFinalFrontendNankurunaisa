@@ -63,7 +63,7 @@ export const AppointmentModal = ({ open, handleClose, appointment }) => {
     <div className="containerModal">
       <div open={open} onClose={handleClose}>
         <div>
-          <p className="titleModal">{appointment ? "Edit Appointment" : "Book Now"}</p>
+          <p className="titleModal">{appointment ? "|| Edit Appointment ||" : "|| Book Appointment Now ||"}</p>
           <AppointmentForm formData={formData} setFormData={setFormData} token={token} handleSaveChanges={handleSaveChanges} appointment={appointment}/>
         </div>
       </div>

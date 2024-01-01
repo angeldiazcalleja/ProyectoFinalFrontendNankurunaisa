@@ -10,7 +10,7 @@ import "./Admin.css";
 import Appointments from "../Appointments/Appointments";
 import Bookings from "../Bookings/Bookings";
 
-const Admin = () => {
+export const Admin = () => {
   const user = useSelector(userData);
   const adminToken = user.token;
 
@@ -71,7 +71,7 @@ const Admin = () => {
         <p className="textPageAdmin">Every Effort Has Its Rewards</p>
       </div>
       <div className="adminContainer">
-        <h2 className="titleAdmin"> || User List ||</h2>
+        <p className="titleAdmin"> || User List ||</p>
         <div className="searchControls">
           <select
             className="selectUsers"

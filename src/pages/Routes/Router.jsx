@@ -11,6 +11,7 @@ import WellnessPalaosGallery from "../Palaos/PalaosComponents/WellnessPalaosGall
 import Admin from "../Admin/Admin";
 import Appointments from "../Appointments/Appointments";
 import { PlanningPalaos } from "../Palaos/PalaosComponents/PlanningPalaos/PlanningPalaos";
+import { BoaVista } from "../BoaVista/BoaVista";
 
 export const Router = () => {
   return (
@@ -39,6 +40,15 @@ export const Router = () => {
             <>
               {/* <Footer showFooter={true} /> */}
               <Palaos />
+            </>
+          }
+        />
+
+<Route
+          path="/boavista"
+          element={
+            <>
+              <BoaVista/>
             </>
           }
         />

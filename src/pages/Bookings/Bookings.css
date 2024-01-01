@@ -4,3 +4,34 @@
 }
 
 
+.tableContainer {
+    margin: 2em 3em;
+    max-width: calc(100% - 6em);
+    overflow-x: auto;
+  }
+
+  .titleBookingsAdmin{
+    text-align: center;
+    font-size: 3.5em;
+    font-variant: all-petite-caps;
+    color: #3f888f;
+    margin-top: 1em;
+    margin-left: 0.4em;
+  }
+
+  
+ .buttonPageBooking{
+
+    margin-left: 69.6em;
+    width: 5em;
+    height: 2.5em;
+    margin-top: -2em;
+    border: 2px solid white;;
+ }
+
+ .buttonPageBooking1{
+    width: 5em;
+    height: 2.5em;
+    margin-top: -2em;
+    border: 2px solid white;
+ }
