@@ -1,0 +1,56 @@
+.locationBoaVistaContainer{
+    width: 100%;
+    height: 50em;
+}
+
+.locationInformation1{
+    margin-top: 4em;
+}
+
+.locationTitleBoaVista{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    margin-left: 13em;
+    text-transform: uppercase;
+    color: #587246;
+}
+
+.locationTitle2BoaVista{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    margin-left: 22.8em;
+    text-transform: uppercase;
+    color: #587246;
+    margin-top: 2em;
+}
+
+.locationSubtitleBoaVista{
+    margin-left: 28.1em;
+    font-size: 1.8em;
+    margin-top: 0.7em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #587246;
+}
+
+.locationText1, .locationText2{
+    text-align:justify;
+    font-weight: 400;
+    font-size: 25px;
+    max-width: 70%;
+    margin-left: 13em;
+    line-height: 1.6em;
+    color: rgb(105, 102, 102);
+    margin-top: 1.8em;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.AboutImageLocation {
+    width: 100%; 
+    height: 35em;
+    text-transform: uppercase;
+    margin-top: 3.5em;
+  }
+  
+  
+  
