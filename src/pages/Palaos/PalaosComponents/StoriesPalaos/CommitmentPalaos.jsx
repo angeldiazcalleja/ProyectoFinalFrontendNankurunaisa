@@ -14,7 +14,7 @@ export const CommitmentPalaos = () => {
         <div className="textContainerCommitment">
           <p>
             Our commitments define us, shape us, inspire us, and unite us for a
-            good cause.{" "}
+            good cause.
           </p>
           <p>Each coral is a story worth fighting for.</p>
         </div>

@@ -43,7 +43,7 @@ export const Bookings = () => {
 
   const handleCreateBooking = async () => {
     try {
-      const newBooking = await createBooking(formData, adminToken);
+      const newBooking = await createBooking(formData, adminToken).then(getBookings(adminToken, 2));
       setBookingsLocal([...bookings, newBooking]);
       setFormData({
         date: new Date(),
