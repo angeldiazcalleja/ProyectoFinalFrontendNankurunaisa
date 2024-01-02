@@ -20,6 +20,7 @@ const Destinations = () => {
           </span>
         </div>
         <div className="destinationImages">
+        <Link to="/boavista">
           <img
             src={Img1}
             alt="Destination 1"
@@ -28,6 +29,7 @@ const Destinations = () => {
             onMouseOut={() => setHovered1(false)}
             
           />
+          </Link>
           <img
             src={Img2}
             alt="Destination 2"

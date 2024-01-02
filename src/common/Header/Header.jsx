@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/LogoHomeFinal.png";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,6 +17,7 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDestinationsOpen, setIsDestinationsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const userToken = useSelector((state) => state.user.token);
   const userRole = useSelector((state) => state.user.credentials.role);
@@ -54,6 +56,7 @@ export const Header = () => {
 
   const handleLogout = () => {
     dispatch(userLogout());
+    navigate("/home")
   };
 
   return (
@@ -85,7 +88,9 @@ export const Header = () => {
                 <Link to="/palaos" className="menu-link" onClick={closeMenu}>
                   <div className="menu-item">Palaos</div>
                 </Link>
+                <Link to="/boavista" className="menu-link" onClick={closeMenu}>
                 <div className="menu-item">BoaVista</div>
+                </Link>
                 <div className="menu-item">Svalrgaror</div>
               </div>
             )}
