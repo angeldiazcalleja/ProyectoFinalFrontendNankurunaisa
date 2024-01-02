@@ -1,5 +1,6 @@
 import HomeBoaVista from "./BoaVistaComponents/HomeBoaVista/HomeBoaVista";
 import "./BoaVista.css"
+import BoaVistaInfo from "./BoaVistaComponents/BoaVistaInfo/BoaVistaInfo";
 
 export const BoaVista = () => {
     return (
@@ -7,6 +8,7 @@ export const BoaVista = () => {
       <div className="boaVistaView">
      
      <HomeBoaVista/>
+     <BoaVistaInfo/>
   
   
       </div>
