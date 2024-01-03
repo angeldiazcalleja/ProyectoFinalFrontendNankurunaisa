@@ -1,0 +1,56 @@
+.activitiesContainerBoaVista {
+    position: relative;
+    width: 100vw;
+    height: 40em;
+    overflow: hidden;
+    background-size: cover;
+    margin-left: -0.6em;
+    margin-top: 3em;
+  }
+  
+  .AboutImageBoaVista {
+    width: 100%; 
+    height: auto;
+  }
+  
+  .contentOverlayBoaVista {
+    position: absolute;
+    max-width: 80%;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 10em;
+    margin-top: 2em;
+  }
+  
+  .aboutTextBoaVista {
+      color: white; 
+      font-size: 4em; 
+      text-align: center;
+      line-height: 1.5em;
+      margin-left: 8em;
+      margin-top: 4em;
+      font-variant: all-petite-caps;
+  }
+  
+  .activitiesBoaVistaButtom {
+    display: inline-block;
+    padding: 0.8em 3em;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.401); 
+    color: white; 
+    border: 3px solid white; 
+    border-radius: 4px; 
+    text-align: center;
+    margin-left: 24em;
+    margin-top: 2em;
+ 
+  }
+  
+  .activitiesBoaVistaButtom:hover {
+    background-color: black;
+    color: white;
+  }
+  

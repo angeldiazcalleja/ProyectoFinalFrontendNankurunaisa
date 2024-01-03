@@ -6,6 +6,7 @@ import AboutBoaVista from "./BoaVistaComponents/AboutBoaVista/AboutBoaVista";
 import LocationBoaVista from "./BoaVistaComponents/LocationBoaVista/LocationBoaVista";
 import CommitmentBoaVista from "./BoaVistaComponents/StoriesBoaVista/CommitmentBoaVista";
 import CarouselBoaVista from "./BoaVistaComponents/CarouselBoaVista/CarouselBoaVista";
+import ActivitiesBoaVista from "./BoaVistaComponents/ActivitiesBoaVista/ActivitiesBoaVista";
 
 export const BoaVista = () => {
     return (
@@ -19,6 +20,7 @@ export const BoaVista = () => {
      <GalleryBoaVista/>
      <CommitmentBoaVista/>
      <CarouselBoaVista/>
+     <ActivitiesBoaVista/>
 
      
   

@@ -1,0 +1,115 @@
+.home-containerBoaVistaGallery {
+  position: relative;
+  width: 100vw;
+  height: 58.5em;
+  background: url("../../../../assets/Boavista/Img22.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.titleHomeBoaVistaGallery {
+  font-size: 3.5em;
+  color: white;
+  margin-left: 1.8em;
+  margin-top: 14.2em;
+}
+
+.titleContainerBoaVistaGallery {
+  margin-top: 40em;
+}
+
+.lineHomeBoaVistaGallery {
+  width: 4em;
+  height: 50px;
+  margin-left: 3.6em;
+  font-size: 28px;
+  position: relative;
+  margin-top: -1em;
+}
+
+.lineHomeBoaVistaGallery:before {
+  content: "";
+  width: 100%;
+  border-bottom: solid 3px rgba(255, 255, 255, 0.452);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.containerGalleryBoaVista {
+  width: 100%;
+  height: 50em;
+}
+
+.titleGallery {
+  font-size: 2.8em;
+  font-variant: all-petite-caps;
+  color: #C19A6B;
+  margin-top: -0.5em;
+  margin-left: 15.5em;
+  font-weight: bold;
+  margin-bottom: -0.5em;
+}
+
+
+.containerGalleryBoaVista{
+  height: 88em;
+}
+
+.galleryContainer {
+  margin: 0em 3em 3em 3em;   
+}
+
+.galleryImage1 {
+  margin-bottom: 1.5em;
+  width: 38em;
+  height: 20em;
+}
+
+.galleryImage2 {
+  margin-bottom: 1.5em; 
+  width: 38em;
+  height: 20em;
+}
+
+.galleryImage4{
+  margin-left: 3.2em;
+  width: 38em;
+  height: 20em;
+  margin-bottom: 1.5em;
+}
+
+
+.topRow,
+.middleRow
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftColumn,
+.rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.lineStudioGallery {
+  width: 98%;
+  height: 50px;
+  margin: 50px 0;
+  font-size: 28px;
+  position: relative;
+  margin-top: 3.4em;
+  margin-left: 1em;
+}
+
+.lineStudioGallery:before {
+  content: "";
+  width: 100%;
+  border-bottom: solid 5px #C19A6B;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}

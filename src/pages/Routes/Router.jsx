@@ -12,6 +12,7 @@ import Admin from "../Admin/Admin";
 import Appointments from "../Appointments/Appointments";
 import { PlanningPalaos } from "../Palaos/PalaosComponents/PlanningPalaos/PlanningPalaos";
 import { BoaVista } from "../BoaVista/BoaVista";
+import ActivitiesGalleryBoaVista from "../BoaVista/BoaVistaComponents/ActivitiesGalleryBoaVista/ActivitiesGalleryBoaVista";
 
 export const Router = () => {
   return (
@@ -44,11 +45,20 @@ export const Router = () => {
           }
         />
 
-<Route
+        <Route
+          path="/activitiesboaVista"
+          element={
+            <>
+              <ActivitiesGalleryBoaVista/>
+            </>
+          }
+        />
+
+        <Route
           path="/boavista"
           element={
             <>
-              <BoaVista/>
+              <BoaVista />
             </>
           }
         />
@@ -71,12 +81,12 @@ export const Router = () => {
             </>
           }
         />
-         <Route
+        <Route
           path="/planningpalaos"
           element={
             <>
               <Footer showFooter={false} />
-              <PlanningPalaos/>
+              <PlanningPalaos />
             </>
           }
         />
@@ -110,7 +120,7 @@ export const Router = () => {
             </>
           }
         />
-         <Route
+        <Route
           path="/admin"
           element={
             <>

@@ -54,7 +54,7 @@ export const CarouselBoaVista = () => {
   return (
     <>
     <div className="titleCarouselBoaVista"> Architecture for Wellness </div>
-    <div className="noselect" style={{ height: '80em', position: 'relative' }}>
+    <div className="noselect" style={{ height: '40em', position: 'relative' }}>
       <div className="arrow arrow-left" onClick={moveLeft}>
         <i className="fi-arrow-left"></i>
       </div>
