@@ -4,7 +4,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useSelector, useDispatch } from "react-redux";
 import { userData } from "../userSlice";
-import { getBookings, createBooking } from "../../services/apiCalls";
+import {
+  getBookings,
+  createBooking,
+  deleteBooking,
+} from "../../services/apiCalls";
 import Img1 from "../../assets/Img1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward } from "@fortawesome/free-solid-svg-icons";
@@ -43,7 +47,9 @@ export const Bookings = () => {
 
   const handleCreateBooking = async () => {
     try {
-      const newBooking = await createBooking(formData, adminToken).then(getBookings(adminToken, 2));
+      const newBooking = await createBooking(formData, adminToken).then(
+        getBookings(adminToken, 2)
+      );
       setBookingsLocal([...bookings, newBooking]);
       setFormData({
         date: new Date(),
@@ -83,6 +89,30 @@ export const Bookings = () => {
     fetchBookings();
   }, [adminToken, currentPage]);
 
+  const handleDeleteBooking = async (bookingId) => {
+    try {
+      // Actualiza el campo isDeleted para la reserva
+      await deleteBooking(bookingId, adminToken); // Necesitas implementar la función deleteBooking
+  
+      // Actualiza la lista de reservas con el estado isDeleted actualizado
+      const updatedBookings = bookings.map((booking) => {
+        if (booking._id === bookingId) {
+          return { ...booking, isDeleted: true };
+        }
+        return booking;
+      });
+  
+      setBookingsLocal(updatedBookings);
+    } catch (error) {
+      if (error.response && error.response.status === 401) {
+        console.error("Error al eliminar la reserva: Token no válido o expirado");
+        // Aquí puedes manejar la renovación del token o redirigir al usuario a iniciar sesión nuevamente
+      } else {
+        console.error("Error al eliminar la reserva:", error);
+      }
+    }
+  };
+  
   return (
     <>
       <div className="imgAdminMiddle">
@@ -95,74 +125,74 @@ export const Bookings = () => {
           <div className="formRow">
             <div className="formColumn">
               <div className="inlineInputs">
-              <div className="formColumn">
-                <label className="labelForm" htmlFor="customerId">
-                  CustomerId
-                </label>
-                <input
-                  className="inputForm"
-                  type="text"
-                  name="customerId"
-                  value={formData.customerId}
-                  onChange={handleInputChange}
-                  placeholder="Customer ID"
-                />
+                <div className="formColumn">
+                  <label className="labelForm" htmlFor="customerId">
+                    CustomerId
+                  </label>
+                  <input
+                    className="inputForm"
+                    type="text"
+                    name="customerId"
+                    value={formData.customerId}
+                    onChange={handleInputChange}
+                    placeholder="Customer ID"
+                  />
                 </div>
-                 
-                 <div className="formColumn">
-                <label className="labelForm" htmlFor="destinationId">
-                  DestinationId
-                </label>
-                
-                <input
-                  className="inputForm"
-                  type="text"
-                  name="destinationId"
-                  value={formData.destinationId}
-                  onChange={handleInputChange}
-                  placeholder="Destination ID"
-                />
+
+                <div className="formColumn">
+                  <label className="labelForm" htmlFor="destinationId">
+                    DestinationId
+                  </label>
+
+                  <input
+                    className="inputForm"
+                    type="text"
+                    name="destinationId"
+                    value={formData.destinationId}
+                    onChange={handleInputChange}
+                    placeholder="Destination ID"
+                  />
                 </div>
               </div>
 
               <div className="formColumn1">
                 <label className="labelForm1" htmlFor="DatePicker">
                   Date
-              </label>
-              <DatePicker
-                className="inputFormPicker"
-                selected={formData.date}
-                onChange={handleDateChange}
-                dateFormat="dd/MM/yyyy"
-              />
+                </label>
+                <DatePicker
+                  className="inputFormPicker"
+                  selected={formData.date}
+                  onChange={handleDateChange}
+                  dateFormat="dd/MM/yyyy"
+                />
               </div>
 
               <div className="inlineInputs">
-              <div className="formColumn">
-                <label className="labelForm" htmlFor="DatePicker">
-                  Information
-              </label>
-                <input
-                  className="inputForm"
-                  type="text"
-                  name="information"
-                  value={formData.information}
-                  onChange={handleInputChange}
-                  placeholder="Information"
-                />
+                <div className="formColumn">
+                  <label className="labelForm" htmlFor="DatePicker">
+                    Information
+                  </label>
+                  <input
+                    className="inputForm"
+                    type="text"
+                    name="information"
+                    value={formData.information}
+                    onChange={handleInputChange}
+                    placeholder="Information"
+                  />
                 </div>
                 <div className="formColumn">
-                <label className="labelForm" htmlFor="DatePicker">
-                  Payment
-              </label>
-                <input
-                  className="inputForm"
-                  type="text"
-                  name="pay"
-                  value={formData.pay}
-                  onChange={handleInputChange}
-                  placeholder="Payment"
-                />
+                  <label className="labelForm" htmlFor="DatePicker">
+                    Payment
+                  </label>
+                  <input
+                    className="inputForm"
+                    type="text"
+                    name="pay"
+                    value={formData.pay}
+                    onChange={handleInputChange}
+                    placeholder="Payment"
+                  />
                 </div>
               </div>
               <button className="buttonForm" onClick={handleCreateBooking}>
@@ -176,25 +206,35 @@ export const Bookings = () => {
           <thead>
             <tr>
               <th>ID</th>
-              <th>Date</th>
-              <th>Customer ID</th>
-              <th>Destination ID</th>
-              <th>Information</th>
-              <th>Payment</th>
+              <th>Fecha</th>
+              <th>ID del Cliente</th>
+              <th>ID del Destino</th>
+              <th>Información</th>
+              <th>Pago</th>
+              <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
-            {bookings.map((booking) => (
-              <tr key={booking._id}>
-                <td>{booking._id}</td>
-                <td>{booking.date}</td>
-                <td>{booking.customerId}</td>
-                <td>{booking.destinationId}</td>
-                <td>{booking.information}</td>
-                <td>{booking.pay}</td>
-              </tr>
-            ))}
-          </tbody>
+  {bookings.map((booking) => (
+    <tr key={booking._id} className={booking.isDeleted ? 'deleted-row' : ''}>
+      <td>{booking._id}</td>
+      <td>{booking.date}</td>
+      <td>{booking.customerId}</td>
+      <td>{booking.destinationId}</td>
+      <td>{booking.information}</td>
+      <td>{booking.pay}</td>
+      <td>
+        <button
+          onClick={() => handleDeleteBooking(booking._id)}
+          disabled={booking.isDeleted} // Deshabilita el botón si ya está eliminado
+        >
+          Eliminar
+        </button>
+      </td>
+    </tr>
+  ))}
+</tbody>
+
         </table>
         <div className="paginationControls">
           <button

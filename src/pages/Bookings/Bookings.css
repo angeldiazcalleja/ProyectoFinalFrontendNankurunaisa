@@ -151,3 +151,9 @@
     margin-left: 15em;
     color: black;
 }
+
+.tableContainer .deleted-row {
+    background-color: #808080b4; 
+    color:  white;
+  }
+  

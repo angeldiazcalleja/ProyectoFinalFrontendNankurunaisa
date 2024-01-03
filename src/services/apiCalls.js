@@ -158,7 +158,7 @@ export const getBookings = async (token, page) => {
   return result.data;
 };
 
-export const deleteBooking = async (token, bookingId) => {
+export const deleteBooking = async (bookingId, token) => {
   const result = await axios.delete(
     "http://localhost:3000/bookings/" + bookingId,
     {
