@@ -1,21 +1,24 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import Img1 from "../../../../assets/Boavista/Img7.jpg";
-import Img2 from "../../../../assets/Boavista/Img22.jpg";
-import Img3 from "../../../../assets/Boavista/Img23.jpg";
+import Img1 from "../../../../assets/Boavista/Img38.webp";
+import Img2 from "../../../../assets/Boavista/Img30.webp";
+import Img3 from "../../../../assets/Boavista/Img31.webp";
 import Img4 from "../../../../assets/Boavista/Img29.webp";
-import Img5 from "../../../../assets/Boavista/Img31.webp";
-import Img6 from "../../../../assets/Boavista/Img25.jpg";
-import Img7 from "../../../../assets/Boavista/Img37.jpg";
-import Img8 from "../../../../assets/Boavista/Img36.jpg";
-import Img9 from "../../../../assets/Boavista/Img34.png";
-import Img10 from "../../../../assets/Boavista/Img32.webp";
+import Img5 from "../../../../assets/Boavista/Img40.webp";
+import Img6 from "../../../../assets/Boavista/Img41.jpg";
+import Img7 from "../../../../assets/Boavista/Img42.webp";
+import Img8 from "../../../../assets/Boavista/Img45.webp";
+import Img9 from "../../../../assets/Boavista/Img44.webp";
+import Img10 from "../../../../assets/Boavista/Img43.webp";
+import Img11 from "../../../../assets/Boavista/Img46.jpg";
+import Img12 from "../../../../assets/Boavista/Img47.webp";
+
 import "./CarouselBoaVista.css";
 
 
 export const CarouselBoaVista = () => {
-  const images = [Img1, Img2, Img3, Img4, Img5,Img6,Img7,Img8,Img9, Img10];
+  const images = [Img1, Img2, Img3, Img4, Img5,Img6,Img7,Img8,Img9, Img10, Img11, Img12];
   const [active, setActive] = useState(0);
 
   const moveLeft = () => {
@@ -49,7 +52,9 @@ export const CarouselBoaVista = () => {
   };
 
   return (
-    <div className="noselect" style={{ height: '80em' }}>
+    <>
+    <div className="titleCarouselBoaVista"> Architecture for Wellness </div>
+    <div className="noselect" style={{ height: '80em', position: 'relative' }}>
       <div className="arrow arrow-left" onClick={moveLeft}>
         <i className="fi-arrow-left"></i>
       </div>
@@ -58,6 +63,7 @@ export const CarouselBoaVista = () => {
         <i className="fi-arrow-right"></i>
       </div>
     </div>
+    </>
   );
 };
 
