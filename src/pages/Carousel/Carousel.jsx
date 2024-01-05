@@ -60,7 +60,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="carouselContainer">
+    <div className="carouselHomeContainer">
       <span className="carouselTitle">Feel our magical moments</span>
       <Slider ref={sliderRef} {...settings}>
         {carouselImages.map((image, index) => (

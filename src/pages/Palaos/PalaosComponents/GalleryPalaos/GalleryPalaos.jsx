@@ -10,7 +10,7 @@ const GalleryPalaos = () => {
   const [isHovered3, setIsHovered3] = useState(false);
 
   return (
-    <div className="gallery-container">
+    <div className="gallery-containerPalaos">
       <div
         className="gallery-item"
         onMouseEnter={() => setIsHovered1(true)}

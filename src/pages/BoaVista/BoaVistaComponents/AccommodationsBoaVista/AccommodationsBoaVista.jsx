@@ -52,7 +52,7 @@ const AccommodationsBoaVista = () => {
             ))}
           </Carousel>
           <div className="boaVistaTitleBottom">
-          <span className="boaVistaAccommodationSpanRight">Maison </span>
+          <span className="boaVistaAccommodationSpanRight">Maison Emerald</span>
           <p className="boaVistaAccommodationTextRight">
           Situated amid the scenic resort gardens, this independent one-bedroom pavilion boasts an expansive private courtyard garden, a lavish master suite, and an enchanting outdoor gazebo.
           </p>

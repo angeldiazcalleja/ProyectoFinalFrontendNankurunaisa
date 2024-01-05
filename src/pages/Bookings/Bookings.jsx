@@ -91,10 +91,9 @@ export const Bookings = () => {
 
   const handleDeleteBooking = async (bookingId) => {
     try {
-      // Actualiza el campo isDeleted para la reserva
-      await deleteBooking(bookingId, adminToken); // Necesitas implementar la función deleteBooking
+
+      await deleteBooking(bookingId, adminToken); 
   
-      // Actualiza la lista de reservas con el estado isDeleted actualizado
       const updatedBookings = bookings.map((booking) => {
         if (booking._id === bookingId) {
           return { ...booking, isDeleted: true };
@@ -106,7 +105,6 @@ export const Bookings = () => {
     } catch (error) {
       if (error.response && error.response.status === 401) {
         console.error("Error al eliminar la reserva: Token no válido o expirado");
-        // Aquí puedes manejar la renovación del token o redirigir al usuario a iniciar sesión nuevamente
       } else {
         console.error("Error al eliminar la reserva:", error);
       }
@@ -226,9 +224,9 @@ export const Bookings = () => {
       <td>
         <button
           onClick={() => handleDeleteBooking(booking._id)}
-          disabled={booking.isDeleted} // Deshabilita el botón si ya está eliminado
+          disabled={booking.isDeleted} 
         >
-          Eliminar
+          Delete
         </button>
       </td>
     </tr>

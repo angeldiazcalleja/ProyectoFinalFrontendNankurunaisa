@@ -1,10 +1,11 @@
-.gallery-container {
+.gallery-containerPalaos {
     display: flex;
     height: 56em;
+    margin-top: 1em;
   }
   
   .gallery-item {
-    margin-top: 5em;
+    margin-top: -15em;
     width: 38em;
     height: 46em;
    margin-left: 3.2em;
