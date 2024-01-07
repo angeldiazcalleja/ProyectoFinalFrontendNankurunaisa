@@ -112,7 +112,7 @@ export const AppointmentForm = ({
         <div className="formRow">
           <div className="formColumn">
             <label className="labelForm" htmlFor="tattooArtist">
-              Artist
+              Personal Assistant
             </label>
             <select
               className="inputForm"
