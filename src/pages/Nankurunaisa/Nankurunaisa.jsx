@@ -47,9 +47,11 @@ export const Nankurunaisa = () => {
               <span className="wildLuxuryAdventurous">Explorer Spirit</span>
             </div>
           </div>
+          
           <div className="exploreButton">
             Explore All Destinations
           </div>
+          
         </div>
       </div>
     </>

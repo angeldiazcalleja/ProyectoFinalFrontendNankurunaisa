@@ -5,7 +5,7 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import { userLogin } from "../userSlice";
 import Inputs from "../../common/Input/Input";
-import { validate } from "../../services/useFul"; 
+import { validate } from "../../services/useFul";
 import "./Register.css";
 
 export const RegisterUser = () => {
@@ -18,6 +18,7 @@ export const RegisterUser = () => {
     email: "",
     password: "",
     phone: "",
+    role: "customer", // Default role, you can change it as needed
   });
 
   const [userError, setUserError] = useState({
@@ -60,7 +61,6 @@ export const RegisterUser = () => {
     }
   };
 
-
   const handleGoToLogIn = () => {
     navigate("/login");
   };
@@ -74,7 +74,6 @@ export const RegisterUser = () => {
           </div>
         ) : (
           <>
-            
             <div className="cardSign0">
               <div className="cardSign1">
                 <div className="textSign">
@@ -92,7 +91,7 @@ export const RegisterUser = () => {
                   text="Name"
                   type="name"
                   name="name"
-                  className={`inputLogin ${userError.nameError !== '' ? 'inputDesignError' : ''}`}
+                  className={`inputLogin ${userError.nameError !== "" ? "inputDesignError" : ""}`}
                   handler={inputHandler}
                   functionError={checkError}
                 />
@@ -101,7 +100,7 @@ export const RegisterUser = () => {
                   text="Email ID"
                   type="email"
                   name="email"
-                  className={`inputLogin ${userError.emailError !== '' ? 'inputDesignError' : ''}`}
+                  className={`inputLogin ${userError.emailError !== "" ? "inputDesignError" : ""}`}
                   handler={inputHandler}
                   functionError={checkError}
                 />
@@ -110,7 +109,7 @@ export const RegisterUser = () => {
                   text="Password"
                   type="password"
                   name="password"
-                  className={`inputLogin ${userError.passwordError !== '' ? 'inputDesignError' : ''}`}
+                  className={`inputLogin ${userError.passwordError !== "" ? "inputDesignError" : ""}`}
                   handler={inputHandler}
                   functionError={checkError}
                 />
@@ -119,13 +118,18 @@ export const RegisterUser = () => {
                   text="Phone"
                   type="Prone"
                   name="phone"
-                  className={`inputLogin ${userError.phoneError !== '' ? 'inputDesignError' : ''}`}
+                  className={`inputLogin ${userError.phoneError !== "" ? "inputDesignError" : ""}`}
                   handler={inputHandler}
                   functionError={checkError}
                 />
                 <div className="errorRedMsg">{userError.phoneError}</div>
+                <label className="labelRegister" htmlFor="role">Select Role:</label>
+                <select name="role" onChange={inputHandler} value={registerDetails.role}>
+                  <option value="customer">Customer</option>
+                  <option value="personalAssistant">Personal Assistant</option>
+                </select>
                 <button className="buttonSignUp" onClick={registerHandler}>
-                🌀 SIGN UP 🌀
+                  🌀 SIGN UP 🌀
                 </button>
               </div>
             </div>

@@ -113,3 +113,10 @@ body {
   margin-bottom: 0.4em;
   margin-top: 0.3em;
 }
+
+
+.labelRegister{
+  font-weight: bold;
+  color: black;
+  margin-left: 5.5em;
+}

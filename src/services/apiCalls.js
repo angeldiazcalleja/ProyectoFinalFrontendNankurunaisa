@@ -55,9 +55,9 @@ export const userProfile = async (token, endpoint) => {
   }
 };
 
-export const updateUserProfile = async (token, data) => {
+export const updateUserProfile = async (token, userId, data) => {
   try {
-    const response = await axios.put("http://localhost:3000/users/:_id", data, {
+    const response = await axios.put(`http://localhost:3000/users/${userId}`, data, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -67,7 +67,7 @@ export const updateUserProfile = async (token, data) => {
     console.error("Error updating user profile:", error);
     throw error;
   }
-};
+}
 
 export const createAppointment = async (newAppointment, token) => {
   const result = await axios.post(
@@ -168,4 +168,9 @@ export const deleteBooking = async (bookingId, token) => {
     }
   );
   return result.data;
-}
+};
+
+
+
+
+

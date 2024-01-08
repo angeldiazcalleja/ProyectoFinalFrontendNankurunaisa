@@ -39,7 +39,6 @@ export const Router = () => {
           path="/palaos"
           element={
             <>
-              {/* <Footer showFooter={true} /> */}
               <Palaos />
             </>
           }
@@ -66,7 +65,6 @@ export const Router = () => {
           path="/appointments"
           element={
             <>
-              {/* <Footer showFooter={true} /> */}
               <Appointments />
             </>
           }
