@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 
 import { jwtDecode } from "jwt-decode";
+import { createAppointment } from "../../../services/apiCalls.js";
 import "./AppointmentForm.css";
 
 export const AppointmentForm = ({
@@ -21,6 +22,17 @@ export const AppointmentForm = ({
 
   const decodeToken = jwtDecode(token);
   const isAdmin = token.role;
+  const handleCreateAppointment = async () => {
+    const customerId =
+      isAdmin === "admin" ? formData.customerId : decodeToken._id;
+    const newAppointment = { ...formData, customerId };
+
+    try {
+      await createAppointment(newAppointment, token);
+    } catch (error) {
+      console.error("Error al crear la cita:", error);
+    }
+  };
 
   return (
     <>
@@ -28,25 +40,10 @@ export const AppointmentForm = ({
         <div className="lineForm"></div>
         <div className="formRow">
           <div className="formColumn">
-            {isAdmin === "admin" ? (
+            {decodeToken.role === "admin" ? (
               <>
                 <label className="labelForm" htmlFor="customer">
-                  Customer
-                </label>
-                <select
-                  className="inputForm"
-                  id="customerId"
-                  name="customerId"
-                  value={formData.customerId}
-                  onChange={handleInputChange}
-                >
-                </select>
-              </>
-            ) : (
-          
-              <div style={{ marginBottom: "20px" }}>
-                <label className="labelForm" htmlFor="customerId">
-                  Id customer
+                  Name Customer
                 </label>
                 <input
                   className="inputForm"
@@ -55,6 +52,22 @@ export const AppointmentForm = ({
                   name="customerId"
                   value={decodeToken.customerId}
                   onChange={handleInputChange}
+                  required
+                />
+              </>
+            ) : (
+              <div style={{ marginBottom: "20px" }}>
+                <label className="labelForm" htmlFor="customerId">
+                  Name Customer
+                </label>
+                <input
+                  className="inputForm"
+                  type="text"
+                  id="customerId"
+                  name="customerId"
+                  value={decodeToken.name}
+                  onChange={handleInputChange}
+                  readOnly
                   required
                 />
               </div>
@@ -127,7 +140,7 @@ export const AppointmentForm = ({
             </select>
           </div>
         </div>
-        <button className="buttonForm" onClick={handleSaveChanges}>
+        <button className="buttonForm" onClick={handleCreateAppointment}>
           {appointment ? "Save Changes" : "Send"}
         </button>
       </div>
