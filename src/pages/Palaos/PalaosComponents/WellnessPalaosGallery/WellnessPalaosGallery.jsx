@@ -1,4 +1,4 @@
-import "./wellnessPalaosGallery.css";
+import "./WellnessPalaosGallery.css";
 import Img1 from "../../../../assets/Palaos/Img10.jpg";
 import Img2 from "../../../../assets/Palaos/Img11.jpg";
 import Img3 from "../../../../assets/Palaos/Img26.webp";

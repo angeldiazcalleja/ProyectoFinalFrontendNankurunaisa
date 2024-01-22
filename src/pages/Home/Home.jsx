@@ -8,6 +8,7 @@ export const Home = () => {
       <div className="lineHome"></div>
       </div>
     </div>
+    
   );
 };
 

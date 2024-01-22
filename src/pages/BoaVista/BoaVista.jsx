@@ -1,5 +1,5 @@
 import HomeBoaVista from "./BoaVistaComponents/HomeBoaVista/HomeBoaVista";
-import "./BoaVista.css"
+import "./BoaVista.css";
 import BoaVistaInfo from "./BoaVistaComponents/BoaVistaInfo/BoaVistaInfo";
 import GalleryBoaVista from "./BoaVistaComponents/GalleryBoaVista/GalleryBoaVista";
 import AboutBoaVista from "./BoaVistaComponents/AboutBoaVista/AboutBoaVista";
@@ -10,31 +10,23 @@ import ActivitiesBoaVista from "./BoaVistaComponents/ActivitiesBoaVista/Activiti
 import AccommodationsBoaVista from "./BoaVistaComponents/AccommodationsBoaVista/AccommodationsBoaVista";
 import { InstagramBoaVista } from "./BoaVistaComponents/InstagramBoaVista/InstagramBoaVista";
 
-
 export const BoaVista = () => {
-    return (
-      <>
+  return (
+    <>
       <div className="boaVistaView">
-     
-     <HomeBoaVista/>
-     <BoaVistaInfo/>
-     <AboutBoaVista/>
-     <LocationBoaVista/>
-     <GalleryBoaVista/>
-     <CommitmentBoaVista/>
-     <CarouselBoaVista/>
-     <ActivitiesBoaVista/>
-     <AccommodationsBoaVista/>
-     <InstagramBoaVista/>
-
-     
-  
-  
+        <HomeBoaVista />
+        <BoaVistaInfo />
+        <AboutBoaVista />
+        <LocationBoaVista />
+        <GalleryBoaVista />
+        <CommitmentBoaVista />
+        <CarouselBoaVista />
+        <ActivitiesBoaVista />
+        <AccommodationsBoaVista />
+        <InstagramBoaVista />
       </div>
-      </>
-    );
-  };
-  
-  
-  export default BoaVista
-  
+    </>
+  );
+};
+
+export default BoaVista;
