@@ -1,4 +1,4 @@
-import "./divePalaos.css";
+import "./DivePalaos.css";
 import Img1 from "../../../../assets/Palaos/Img54.jpeg";
 import Img2 from "../../../../assets/Palaos/Img55.jpg";
 import Img3 from "../../../../assets/Palaos/Img57.jpg";
