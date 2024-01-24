@@ -72,7 +72,7 @@ export const Login = () => {
                   <p>
                     New to this site?{" "}
                     <span className="changeSignText" onClick={handleGoToSignUp}>
-                      Sign Up
+                      Sign Up!
                     </span>
                   </p>
                 </div>
