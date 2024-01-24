@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const login = async (data) => {
   try {
-    const response = await axios.post("http://localhost:3000/auth/login", data);
+    const response = await axios.post("https://candid-panda-8dc96c.netlify.app/auth/login", data);
     return response;
   } catch (error) {
     console.error("Error during login:", error);
@@ -12,7 +12,7 @@ export const login = async (data) => {
 
 export const registerUser = async (data) => {
   try {
-    const response = await axios.post("http://localhost:3000/users", data);
+    const response = await axios.post("https://candid-panda-8dc96c.netlify.app/users", data);
     return response;
   } catch (error) {
     console.error("Error during registration:", error);
@@ -22,7 +22,7 @@ export const registerUser = async (data) => {
 
 export const getAllUsers = async (token, page) => {
   try {
-    const response = await axios.get("http://localhost:3000/users", {
+    const response = await axios.get("https://candid-panda-8dc96c.netlify.app/users", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -41,7 +41,7 @@ export const getAllUsers = async (token, page) => {
 export const userProfile = async (token, endpoint) => {
   try {
     const response = await axios.get(
-      `http://localhost:3000/users/${endpoint}`,
+      `https://candid-panda-8dc96c.netlify.app/users/${endpoint}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -57,7 +57,7 @@ export const userProfile = async (token, endpoint) => {
 
 export const updateUserProfile = async (token, userId, data) => {
   try {
-    const response = await axios.put(`http://localhost:3000/users/${userId}`, data, {
+    const response = await axios.put(`https://candid-panda-8dc96c.netlify.app/users/${userId}`, data, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -71,7 +71,7 @@ export const updateUserProfile = async (token, userId, data) => {
 
 export const createAppointment = async (newAppointment, token) => {
   const result = await axios.post(
-    "http://localhost:3000/appointments",
+    "https://candid-panda-8dc96c.netlify.app/appointments",
     newAppointment,
     {
       headers: {
@@ -83,7 +83,7 @@ export const createAppointment = async (newAppointment, token) => {
 };
 
 export const getAppointments = async (token, page) => {
-  const result = await axios.get("http://localhost:3000/appointments", {
+  const result = await axios.get("https://candid-panda-8dc96c.netlify.app/appointments", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -96,7 +96,7 @@ export const getAppointments = async (token, page) => {
 
 export const modifyAppointment = async (token, appointmentId, formData) => {
   const result = await axios.put(
-    "http://localhost:3000/appointments/" + appointmentId,
+    "https://candid-panda-8dc96c.netlify.app/appointments/" + appointmentId,
     formData,
     {
       headers: {
@@ -109,7 +109,7 @@ export const modifyAppointment = async (token, appointmentId, formData) => {
 
 export const deleteAppointment = async (token, appointmentId) => {
   const result = await axios.delete(
-    "http://localhost:3000/appointments/" + appointmentId,
+    "https://candid-panda-8dc96c.netlify.app/appointments/" + appointmentId,
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -121,7 +121,7 @@ export const deleteAppointment = async (token, appointmentId) => {
 
 export const restoreDeletedAppointment = async (token, appointmentId, formData) => {
     const result = await axios.put(
-      "http://localhost:3000/appointments/restore/" +appointmentId, formData,
+      "https://candid-panda-8dc96c.netlify.app/appointments/restore/" +appointmentId, formData,
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -134,7 +134,7 @@ export const restoreDeletedAppointment = async (token, appointmentId, formData) 
 
 export const createBooking = async (newBooking, token) => {
   const result = await axios.post(
-    "http://localhost:3000/bookings",
+    "https://candid-panda-8dc96c.netlify.app/bookings",
     newBooking,
     {
       headers: {
@@ -147,7 +147,7 @@ export const createBooking = async (newBooking, token) => {
 
 
 export const getBookings = async (token, page) => {
-  const result = await axios.get("http://localhost:3000/bookings", {
+  const result = await axios.get("https://candid-panda-8dc96c.netlify.app/bookings", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -160,7 +160,7 @@ export const getBookings = async (token, page) => {
 
 export const deleteBooking = async (bookingId, token) => {
   const result = await axios.delete(
-    "http://localhost:3000/bookings/" + bookingId,
+    "https://candid-panda-8dc96c.netlify.app/bookings/" + bookingId,
     {
       headers: {
         Authorization: `Bearer ${token}`,
