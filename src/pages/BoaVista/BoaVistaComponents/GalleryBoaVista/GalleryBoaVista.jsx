@@ -1,7 +1,7 @@
 import "./GalleryBoaVista.css";
-import Img1 from "../../../../assets/BoaVista/Img4.jpg";
-import Img2 from "../../../../assets/BoaVista/Img3.jpg";
-import Img3 from "../../../../assets/BoaVista/Img5.webp";
+import Img1 from "../../../../assets/Boavista/Img4.jpg";
+import Img2 from "../../../../assets/Boavista/Img31.jpg";
+import Img3 from "../../../../assets/Boavista/Img5.webp";
 import { useState } from "react";
 
 const GalleryBoaVista = () => {
