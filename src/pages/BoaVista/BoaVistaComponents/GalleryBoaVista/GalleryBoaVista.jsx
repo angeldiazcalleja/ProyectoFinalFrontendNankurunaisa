@@ -1,6 +1,6 @@
 import "./GalleryBoaVista.css";
 import Img1 from "../../../../assets/Boavista/Img4.jpg";
-import Img2 from "../../../../assets/Boavista/Img31.jpg";
+import Img2 from "../../../../assets/Boavista/Img31.webp";
 import Img3 from "../../../../assets/Boavista/Img5.webp";
 import { useState } from "react";
 
