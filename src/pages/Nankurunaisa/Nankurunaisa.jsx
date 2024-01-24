@@ -1,6 +1,6 @@
 import "./Nankurunaisa.css";
-import Img5 from "../../assets/img5.jpg";
-import Img9 from "../../assets/img9.jpeg";
+import Img5 from "../../assets/Img5.jpg";
+import Img9 from "../../assets/Img9.jpeg";
 
 export const Nankurunaisa = () => {
   return (
